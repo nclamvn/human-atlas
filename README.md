@@ -1,64 +1,52 @@
-# Human Atlas
+# Cơ thể người — Khám phá từ bên trong
 
-An interactive 3D anatomy explorer built with React, Three.js, and shadcn/ui. Take the BodyParts3D adult male reference apart into **2,234 individually selectable meshes**, explore **15 anatomical systems**, and search **3,432 named concepts**.
+Bản trải nghiệm giáo dục tiếng Việt phát triển từ [Human Atlas của ashemag](https://github.com/ashemag/human-atlas). Kho mã nguồn độc lập: [nclamvn/human-atlas](https://github.com/nclamvn/human-atlas). Bản này đang ở giai đoạn trải nghiệm thử; chưa triển khai website công khai.
 
-**[Explore the live demo](https://human-atlas-seven.vercel.app)**
+## Chạy thử
 
-## Explore
-
-- Orbit, zoom, and select structures directly on the body.
-- Toggle individual systems or use skeleton and organ presets.
-- Move from assembled anatomy to a spaced inventory of every visible piece.
-- Search anatomical names and source identifiers.
-- Isolate a selected structure and read its details.
-- Use compact controls and detail panels on mobile.
-
-## Run locally
-
-Requires Node.js 22.13 or newer. No API keys or accounts are needed.
+Yêu cầu Node.js 22.13+.
 
 ```sh
+git clone https://github.com/nclamvn/human-atlas.git
+cd human-atlas
 npm ci
 npm run dev
 ```
 
-Open http://localhost:3016. To build the static site, run `npm run build`; the output is in `dist/`.
+Mở http://127.0.0.1:3016/. Thêm `?webgl` để kiểm tra WebGL2 dự phòng. Không cần tài khoản hoặc API key.
 
-## Validate
+## Đã triển khai
+
+- Giao diện tiếng Việt, font Inter cục bộ, bố cục desktop/mobile.
+- Atlas nam BodyParts3D 4.0: 2.234 mesh / 3.432 khái niệm.
+- Atlas nữ HRA v1.5: 888 mesh / 1.073 khái niệm.
+- Click/chạm cấu trúc để mở giải thích; tìm kiếm không dấu, xem cận cảnh, bật/tắt hệ cơ quan, xoay/phóng to, tách bộ phận và xuyên thấu.
+- Bốn bài: tim, hô hấp, tiêu hóa, thận; sơ đồ chức năng, phát/dừng, tua, tốc độ và giải thích từng giai đoạn.
+- Three.js 0.186 WebGPU-first / WebGL2 fallback, TSL, vật liệu theo nhóm mô, tải riêng phần đồ họa và từng atlas.
+
+## Kiểm tra
 
 ```sh
 npm run check
-node scripts/validate-atlas.mjs
-node scripts/validate-interactions.mjs
+npm test
 npm run build
+npm audit --omit=dev
 ```
 
-Validation covers mesh buffers, names and concept membership, nonoverlapping exploded layouts at desktop and mobile aspect ratios, search and inspection contracts, and tap-versus-drag handling. Browser interaction checks have exercised selection, system controls, search, isolation, rotation, and 390×844, 320×568, and 844×390 layouts. Phone controls stay clear of the exploded inventory, and isolated structures fit the space above or beside the detail panel. Physical-device performance and real multitouch hardware have not been tested.
+Build tĩnh ở `dist/`. Bộ test xác minh mọi buffer của cả hai atlas, ánh xạ ID, bố trí tách ở ba tỷ lệ màn hình và phân biệt chạm/kéo/đa điểm. Xem [báo cáo kiểm thử](docs/vibecode/VERIFY-010.md) để biết phạm vi kiểm tra trực tiếp và các hạng mục chưa nghiệm thu.
 
-## Anatomy data
+## Giới hạn phải đọc
 
-The current viewer uses **BodyParts3D 4.0**, an adult male reference anatomy, licensed **CC BY 4.0**. It does not represent every human structure or variation. Individual source meshes are distinct from named concepts, which may group multiple meshes. Descriptions distinguish general system context from individual organ explanations.
+Hai atlas không có cùng độ phủ. Mẫu nữ có các cơ quan chọn lọc; xương và cơ chưa đầy đủ. Phổi mẫu nam chứa cây phế quản và mạch máu nhưng không có bề mặt nhu mô phổi trong gói mesh hiện tại.
 
-Geometry is simplified for browser performance while retaining every source mesh. The packaged model contains 2,288,268 triangles and downloads approximately 33 MB of compressed geometry. Full credits, source links, and adaptation details are in [ATTRIBUTION.md](public/ATTRIBUTION.md).
+Tên Việt đã biên tập cho các cấu trúc phổ biến, chưa bao phủ mọi thuật ngữ chuyên sâu. Cấu trúc chưa dịch dùng tên hệ bằng tiếng Việt kèm mã định danh; tên nguồn giữ trong mục đối chiếu. Không suy đoán tên giải phẫu để lấp dữ liệu trống.
 
-This is an educational explorer, not a diagnostic or surgical tool.
+Chuyển động tim/phổi là biến dạng minh họa, không phải mô phỏng cơ sinh học. Tiêu hóa và lọc thận được giải thích bằng sơ đồ chức năng riêng; không giả định mesh bề mặt chứa cấu trúc vi thể. Nội dung tham khảo NHLBI/NIDDK. Cần phản biện chuyên môn trước phát hành giáo dục rộng rãi; không dùng để chẩn đoán hay điều trị.
 
-## How it works
+## Giấy phép
 
-Geometry is merged into batches. Per-structure GPU textures control translation, visibility, and selection, while component geometry supports accurate picking. Exploded layouts pack only the visible pieces. Rendering updates when the scene changes; orbit controls remain responsive without thousands of separate draw calls.
+Mã nguồn gốc: [MIT](LICENSE). Dữ liệu giải phẫu: CC BY 4.0, giữ đầy đủ [ghi công và nguồn](public/ATTRIBUTION.md). Không tái sử dụng dữ liệu atlas thương mại có bản quyền hạn chế.
 
-The optional WebMCP tools expose anatomy search and inspection in compatible browsers. The visible interface works without them.
+## Lộ trình còn lại
 
-## Rebuilding geometry
-
-The repository includes browser-ready geometry. Rebuilding it is optional: obtain the official BodyParts3D OBJ archive and English metadata tables, prepare the joined concepts and display-system mappings, run `scripts/convert-anatomy.py`, then `node scripts/optimize-anatomy.mjs` and `node scripts/compress-models.mjs`. Simplification uses a 0.2% relative error limit per structure.
-
-## Deploy
-
-Import this repository into Vercel as a Vite project. The included `vercel.json` configures `npm ci`, `npm run build`, and the `dist` output directory. It can also be served by a static host.
-
-## License
-
-Original application code is released under the [MIT License](LICENSE). **The anatomy data has its own CC BY 4.0 license**; preserve the attribution when redistributing it. Third-party dependencies retain their respective licenses.
-
-Issues and pull requests are welcome. Please include reproduction steps and browser/device details for interaction problems.
+Mặt cắt giải phẫu, biên tập đầy đủ thuật ngữ Việt, đánh giá chuyên gia, tối ưu theo thời gian GPU thực đo, kiểm thử điện thoại thật và ma trận trình duyệt. Hiệu ứng hậu kỳ nâng cao chỉ thêm khi giữ được độ rõ giải phẫu và ngân sách hiệu năng.
