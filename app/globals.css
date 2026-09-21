@@ -33,3 +33,11 @@
 @media(max-width:767px){.discover-panel{grid-template-columns:repeat(3,1fr)}.discover-panel .abdomen-entry{padding:8px 12px;border-color:color-mix(in srgb,var(--entry-accent) 20%,transparent)}.abdomen-chapters{grid-template-columns:repeat(8,1fr);gap:3px}}
 @media(max-width:767px){.studio:not(.abdomen-active) .view-controls{bottom:360px}.studio:not(.abdomen-active) .stage-caption{display:none}}
 @media(max-width:767px){.narration-player{margin-top:10px;padding:8px}.narration-track strong{max-width:150px}.narration-player+.tour-transcript{margin-top:7px}}
+
+/* The introductory narration has its own vertical lane. Keep the systems
+   navigator below it at every desktop density instead of relying on its old
+   pre-narration coordinates. */
+@media(min-width:768px){.studio:not(.has-detail):not(.abdomen-active) .systems-panel{top:448px;max-height:calc(100% - 518px)}}
+@media(min-width:768px) and (max-width:1200px){.studio:not(.has-detail):not(.abdomen-active) .systems-panel{top:406px;max-height:calc(100% - 476px)}}
+@media(min-width:768px) and (max-height:760px){.studio:not(.has-detail):not(.abdomen-active) .systems-panel{top:382px;max-height:calc(100% - 452px)}}
+@media(min-width:768px) and (min-height:1000px){.studio:not(.has-detail):not(.abdomen-active) .systems-panel{top:470px;max-height:calc(100% - 540px)}}
