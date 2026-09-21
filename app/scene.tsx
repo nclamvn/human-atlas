@@ -21,7 +21,8 @@ export default function AnatomyScene({atlas,state,onSelect,onProgress,onError}:P
   const abort=new AbortController();
   let renderer:T.WebGPURenderer;
   try{renderer=new T.WebGPURenderer({antialias:true,alpha:false,forceWebGL:new URLSearchParams(location.search).has('webgl')});}catch{onError('Không thể mở mô hình 3D trên thiết bị này. Hãy thử trình duyệt có hỗ trợ đồ họa.');return;}
-  renderer.setPixelRatio(Math.min(devicePixelRatio,innerWidth<768?1.5:2));renderer.setClearColor('#101c25');renderer.outputColorSpace=T.SRGBColorSpace;renderer.toneMapping=T.ACESFilmicToneMapping;renderer.toneMappingExposure=1.15;el.appendChild(renderer.domElement);
+  const femaleTheme=atlas.sex==='female';
+  renderer.setPixelRatio(Math.min(devicePixelRatio,innerWidth<768?1.5:2));renderer.setClearColor(femaleTheme?'#16070d':'#101c25');renderer.outputColorSpace=T.SRGBColorSpace;renderer.toneMapping=T.ACESFilmicToneMapping;renderer.toneMappingExposure=femaleTheme?1.2:1.15;el.appendChild(renderer.domElement);
   renderer.domElement.setAttribute('aria-label','Mô hình giải phẫu tương tác. Kéo để xoay, cuộn để phóng to, chạm vào cơ quan để tìm hiểu.');
   let rendererReady=false;
   let cameraGoal:T.Vector3|null=null,targetGoal:T.Vector3|null=null;const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -30,14 +31,14 @@ export default function AnatomyScene({atlas,state,onSelect,onProgress,onError}:P
   camera.position.set(1.4,1.05,3.6);controls.target.set(0,.85,0);controls.enableDamping=true;controls.dampingFactor=.085;controls.minDistance=.07;controls.maxDistance=40;controls.maxPolarAngle=Math.PI*.96;controls.addEventListener('change',()=>{dirty=true;});
   let env:T.RenderTarget|undefined;
   renderer.init().then(()=>{if(disposed)return;const pmrem=new T.PMREMGenerator(renderer),room=new RoomEnvironment();env=pmrem.fromScene(room,.04);room.dispose();pmrem.dispose();scene.environment=env.texture;scene.environmentIntensity=.45;rendererReady=true;el.dataset.backend=('isWebGPUBackend' in renderer.backend&&renderer.backend.isWebGPUBackend)?'webgpu':'webgl2';dirty=true;}).catch(()=>{if(!disposed)onError('Không thể khởi tạo đồ họa. Hãy tải lại trang hoặc dùng một trình duyệt khác.');});
-  scene.add(new T.HemisphereLight(0xd9ebff,0x192733,1.1));
-  const key=new T.DirectionalLight(0xffeee5,2.1);key.position.set(-2,4,3);scene.add(key);
-  const rim=new T.DirectionalLight(0x93caff,2.8);rim.position.set(2,2,-3);scene.add(rim);
-  const fill=new T.DirectionalLight(0xf5dae6,.45);fill.position.set(2,1,3);scene.add(fill);
-  const ground=new T.Mesh(new T.CircleGeometry(30,96),new T.MeshStandardNodeMaterial({color:0x101c25,roughness:1}));ground.rotation.x=-Math.PI/2;ground.position.y=-.019;scene.add(ground);
-  const platform=new T.Mesh(new T.CylinderGeometry(.62,.64,.018,100),new T.MeshStandardNodeMaterial({color:0x203640,metalness:.2,roughness:.65}));platform.position.y=-.016;scene.add(platform);
-  const ring=new T.Mesh(new T.RingGeometry(.60,.601,128),new T.MeshBasicNodeMaterial({color:0x8cafb9,transparent:true,opacity:.28,side:T.DoubleSide}));ring.rotation.x=-Math.PI/2;ring.position.y=.001;scene.add(ring);
-  const innerRing=new T.Mesh(new T.RingGeometry(.55,.551,128),new T.MeshBasicNodeMaterial({color:0xa4aeb8,transparent:true,opacity:.1,side:T.DoubleSide}));innerRing.rotation.x=-Math.PI/2;innerRing.position.y=.001;scene.add(innerRing);
+  scene.add(new T.HemisphereLight(femaleTheme?0xffe9ee:0xd9ebff,femaleTheme?0x35101d:0x192733,femaleTheme?1.18:1.1));
+  const key=new T.DirectionalLight(femaleTheme?0xffe8df:0xffeee5,femaleTheme?2.3:2.1);key.position.set(-2,4,3);scene.add(key);
+  const rim=new T.DirectionalLight(femaleTheme?0xb66a7e:0x93caff,femaleTheme?3.15:2.8);rim.position.set(2,2,-3);scene.add(rim);
+  const fill=new T.DirectionalLight(femaleTheme?0xffb8c9:0xf5dae6,femaleTheme?.62:.45);fill.position.set(2,1,3);scene.add(fill);
+  const ground=new T.Mesh(new T.CircleGeometry(30,96),new T.MeshStandardNodeMaterial({color:femaleTheme?0x16070d:0x101c25,roughness:1}));ground.rotation.x=-Math.PI/2;ground.position.y=-.019;scene.add(ground);
+  const platform=new T.Mesh(new T.CylinderGeometry(.62,.64,.018,100),new T.MeshStandardNodeMaterial({color:femaleTheme?0x35101d:0x203640,metalness:femaleTheme?.34:.2,roughness:.65}));platform.position.y=-.016;scene.add(platform);
+  const ring=new T.Mesh(new T.RingGeometry(.60,.601,128),new T.MeshBasicNodeMaterial({color:femaleTheme?0xb66a7e:0x8cafb9,transparent:true,opacity:femaleTheme?.38:.28,side:T.DoubleSide}));ring.rotation.x=-Math.PI/2;ring.position.y=.001;scene.add(ring);
+  const innerRing=new T.Mesh(new T.RingGeometry(.55,.551,128),new T.MeshBasicNodeMaterial({color:femaleTheme?0xf0a3b7:0xa4aeb8,transparent:true,opacity:femaleTheme?.13:.1,side:T.DoubleSide}));innerRing.rotation.x=-Math.PI/2;innerRing.position.y=.001;scene.add(innerRing);
   const apertureCurve=new T.CatmullRomCurve3(Array.from({length:48},(_,i)=>{const a=i/48*Math.PI*2;return new T.Vector3(Math.cos(a),Math.sin(a),0);}),true,'centripetal');
   const apertureMaterial=new T.MeshBasicNodeMaterial({color:0xe8cda5,transparent:true,opacity:.2,depthTest:false,depthWrite:false});
   const abdomenAperture=new T.Mesh(new T.TubeGeometry(apertureCurve,96,.006,6,true),apertureMaterial);abdomenAperture.renderOrder=12;abdomenAperture.visible=false;scene.add(abdomenAperture);

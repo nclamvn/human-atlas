@@ -68,7 +68,7 @@ export default function Home(){
  const detailOpen=!!chosen||!!lesson;
  const panelOpen=detailOpen||!!activeTour;
  const featuredTours=tour.catalog?.tours??[];
- return <main className={'studio '+(panelOpen?'has-detail':'')+(activeTour?' abdomen-active':'')+(state.explode>.1?' is-exploded':'')}>
+ return <main className={'studio '+(sex==='female'?'female-theme ':'')+(panelOpen?'has-detail':'')+(activeTour?' abdomen-active':'')+(state.explode>.1?' is-exploded':'')}>
   <Suspense fallback={<div className="scene"/>}>{atlas&&<AnatomyScene atlas={atlas} state={{...state,inspectorOpen:panelOpen,lesson:lesson?.id,phase:activeTour?tourNarration.phase:phase,narrationPlaying:activeTour?tourNarration.playing:false}} onSelect={choosePart} onProgress={setProgress} onError={setError}/>}</Suspense>
   <div className="stage-shade"/>
   <header className="topbar">
