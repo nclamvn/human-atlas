@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "facts": [
+    {
+      "id": "bj-return",
+      "status": "sourced",
+      "evidenceLevel": "curated_knowledge",
+      "sourceId": "nhlbi-heart-blood-flow-2025",
+      "evidenceSpan": "Tĩnh mạch đưa máu trở về tim; động mạch đưa máu rời tim.",
+      "copy": "Tĩnh mạch đưa máu về tim, còn động mạch đưa máu rời tim."
+    },
+    {
+      "id": "bj-vena-cava",
+      "status": "sourced",
+      "evidenceLevel": "curated_knowledge",
+      "sourceId": "nhlbi-heart-blood-flow-2025",
+      "evidenceSpan": "Máu ít oxy từ cơ thể đi vào nhĩ phải qua tĩnh mạch chủ trên và tĩnh mạch chủ dưới.",
+      "copy": "Hai tĩnh mạch chủ là những cửa lớn đưa máu ít oxy vào nhĩ phải."
+    },
+    {
+      "id": "bj-right-heart",
+      "status": "sourced",
+      "evidenceLevel": "curated_knowledge",
+      "sourceId": "nhlbi-heart-blood-flow-2025",
+      "evidenceSpan": "Từ thất phải, máu đi qua động mạch phổi đến phổi.",
+      "copy": "Thất phải tạo lực đẩy đưa máu đến hai lá phổi."
+    },
+    {
+      "id": "bj-lung-exchange",
+      "status": "sourced",
+      "evidenceLevel": "curated_knowledge",
+      "sourceId": "nhlbi-heart-blood-flow-2025",
+      "evidenceSpan": "Tại phổi, máu nhận oxy rồi trở lại nhĩ trái qua tĩnh mạch phổi.",
+      "copy": "Sau khi nhận oxy ở phổi, máu trở về nhĩ trái qua tĩnh mạch phổi."
+    },
+    {
+      "id": "bj-left-heart",
+      "status": "sourced",
+      "evidenceLevel": "curated_knowledge",
+      "sourceId": "nhlbi-heart-blood-flow-2025",
+      "evidenceSpan": "Thất trái đẩy máu giàu oxy vào động mạch chủ để phân phối khắp cơ thể.",
+      "copy": "Thất trái bơm máu giàu oxy vào động mạch chủ và hệ tuần hoàn toàn thân."
+    },
+    {
+      "id": "bj-valves",
+      "status": "sourced",
+      "evidenceLevel": "curated_knowledge",
+      "sourceId": "nhlbi-heart-blood-flow-2025",
+      "evidenceSpan": "Các van tim kiểm soát hướng dòng chảy và hạn chế máu chảy ngược.",
+      "copy": "Các van mở–đóng giúp dòng máu tiếp tục theo một hướng."
+    },
+    {
+      "id": "bj-visual-convention",
+      "status": "sourced",
+      "evidenceLevel": "educational_illustration",
+      "sourceId": "human-atlas-visual-conventions-v1",
+      "evidenceSpan": "Tuyến hạt, tốc độ, nhịp sáng và chuyển màu là minh họa giáo dục; chúng không phải dữ liệu đo, mô phỏng CFD hay bản đồ mao mạch của một cá thể.",
+      "copy": "Dòng hạt chỉ dẫn đường kể chuyện; tốc độ và mật độ không biểu diễn phép đo sinh lý."
+    },
+    {
+      "id": "bj-color-convention",
+      "status": "sourced",
+      "evidenceLevel": "educational_illustration",
+      "sourceId": "human-atlas-visual-conventions-v1",
+      "evidenceSpan": "Màu lam và màu đỏ trong hành trình là quy ước trực quan cho máu tương đối ít oxy và giàu oxy, không phải màu quan sát trực tiếp trong cơ thể.",
+      "copy": "Lam–đỏ là quy ước mức oxy tương đối, không phải màu thật của máu trong cơ thể."
+    }
+  ]
+}

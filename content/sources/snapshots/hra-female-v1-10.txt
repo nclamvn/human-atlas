@@ -1,0 +1,4 @@
+Human Reference Atlas united-female v1.10 was inspected on 2026-09-21.
+The official metadata release date is 2026-06-09 and the declared license is CC BY 4.0.
+The assembly contains female reproductive structures, abdominal digestive organs, urinary structures, blood vessels, selected lymphatic structures, subcutaneous abdominal adipose tissue and omentum.
+This is a composite reference atlas and is not a diagnostic model of one individual.

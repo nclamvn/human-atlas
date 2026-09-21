@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": "hra-female-v1-10",
+      "title": "Human Reference Atlas 3D Reference Object Library — united-female v1.10",
+      "url": "https://cdn.humanatlas.io/digital-objects/ref-organ/united-female/v1.10/metadata.json",
+      "license": "CC BY 4.0",
+      "snapshot": "hra-female-v1-10.txt",
+      "capturedAt": "2026-09-21"
+    },
+    {
+      "id": "female-abdomen-research-2026-09-21",
+      "title": "Human Atlas — registry nghiên cứu vùng bụng nữ",
+      "url": "docs/research/female-abdomen-3d/README.md",
+      "license": "Project research synthesis; upstream licenses retained per source",
+      "snapshot": "female-abdomen-research-2026-09-21.txt",
+      "capturedAt": "2026-09-21"
+    },
+    {
+      "id": "nhlbi-heart-blood-flow-2025",
+      "title": "NHLBI — How the Heart Works: How Blood Flows through the Heart",
+      "url": "https://www.nhlbi.nih.gov/health/heart/blood-flow",
+      "license": "Public educational reference; source text paraphrased in local snapshot",
+      "snapshot": "nhlbi-heart-blood-flow-2025.txt",
+      "capturedAt": "2026-09-21"
+    },
+    {
+      "id": "human-atlas-visual-conventions-v1",
+      "title": "Human Atlas — quy ước minh họa sinh lý",
+      "url": "docs/vibecode/BLUEPRINT-BLOOD-JOURNEY.md",
+      "license": "Project-authored educational convention",
+      "snapshot": "human-atlas-visual-conventions-v1.txt",
+      "capturedAt": "2026-09-21"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "digest": "19c376852de7f076e5e37b7d2d03edeb7f8809df2deaa37633bbfaaa30640144",
+  "tours": [
+    {
+      "id": "blood-journey",
+      "title": "Theo “chân” giọt máu",
+      "eyebrow": "Hành trình tuần hoàn",
+      "summary": "Một vòng qua tim, phổi và từng mô",
+      "atlas": "male",
+      "hero": {
+        "countLabel": "08 nhịp",
+        "accent": "#ef7b73"
+      },
+      "beatCount": 8,
+      "path": "/content/journeys/blood-journey.json"
+    },
+    {
+      "id": "female-abdomen",
+      "title": "Vùng bụng nữ",
+      "eyebrow": "Chuyên đề tương tác",
+      "summary": "Từ lớp mỡ đến không gian chậu",
+      "atlas": "female",
+      "hero": {
+        "countLabel": "05 lớp",
+        "accent": "#d9c4a1"
+      },
+      "beatCount": 5,
+      "path": "/content/journeys/female-abdomen.json"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+Màu lam và màu đỏ trong hành trình là quy ước trực quan cho máu tương đối ít oxy và giàu oxy, không phải màu quan sát trực tiếp trong cơ thể.
+Tuyến hạt, tốc độ, nhịp sáng và chuyển màu là minh họa giáo dục; chúng không phải dữ liệu đo, mô phỏng CFD hay bản đồ mao mạch của một cá thể.
+

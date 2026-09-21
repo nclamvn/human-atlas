@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "journeyId": "female-abdomen",
+  "provider": "ElevenLabs",
+  "modelId": "eleven_v3",
+  "languageCode": "vi",
+  "voiceId": "QqID1ZB0DTItNxAKGBNW",
+  "voiceName": "Viết Linh",
+  "outputFormat": "mp3_44100_128",
+  "generatedAt": "2026-09-21T09:06:54.798Z",
+  "beats": [
+    {
+      "beatId": "map",
+      "audioUrl": "/audio/female-abdomen/01-map.mp3",
+      "alignmentUrl": "/audio/female-abdomen/alignment/01-map.json",
+      "durationSeconds": 8.32,
+      "audioSha256": "67bdc63c729344e81c9db289aeb17cc6cb4ff54b61735c8e31a0bd8c3efd8219",
+      "alignmentSha256": "c9dd2a11397880dd5a9c4287efddadbdf418ff26ee21e5e1e181a5d2b77dcd27"
+    },
+    {
+      "beatId": "adipose",
+      "audioUrl": "/audio/female-abdomen/02-adipose.mp3",
+      "alignmentUrl": "/audio/female-abdomen/alignment/02-adipose.json",
+      "durationSeconds": 11.04,
+      "audioSha256": "931b1d6a87fb35f362bfe9c4c0a6f180866d3788b84da50f9bb8581ee27d3275",
+      "alignmentSha256": "3752f77bba835eebdadd3a57fce6be390dc70b33f5a1e0d5de98dd069c3cd6ff"
+    },
+    {
+      "beatId": "digestion",
+      "audioUrl": "/audio/female-abdomen/03-digestion.mp3",
+      "alignmentUrl": "/audio/female-abdomen/alignment/03-digestion.json",
+      "durationSeconds": 9.6,
+      "audioSha256": "cd2be0c8fba90fb523892bb724f16a44a29e43baef0834dfb3cbc3a14bea8e49",
+      "alignmentSha256": "af33d917cb601584f9a0c031c865fcce9561c240a402e3fe378264cb5711479c"
+    },
+    {
+      "beatId": "pelvis",
+      "audioUrl": "/audio/female-abdomen/04-pelvis.mp3",
+      "alignmentUrl": "/audio/female-abdomen/alignment/04-pelvis.json",
+      "durationSeconds": 8.56,
+      "audioSha256": "108cc6abac0c85a897eca183c706ec23ceb748a61351790ba9fae01ea14ad378",
+      "alignmentSha256": "04d696110600cb6dac7d5262551ece8853ee4eaa771a3f09f6b18a7cff9ae618"
+    },
+    {
+      "beatId": "circulation",
+      "audioUrl": "/audio/female-abdomen/05-circulation.mp3",
+      "alignmentUrl": "/audio/female-abdomen/alignment/05-circulation.json",
+      "durationSeconds": 9.28,
+      "audioSha256": "dbf3371bb209938f699daa1cdfd47c64ffc570573a37c4f6a797baecac55d344",
+      "alignmentSha256": "25f56f258cad73787ceb0c39726898727d13f84192bedefe9ae2b33daa09dd3f"
+    }
+  ]
+}

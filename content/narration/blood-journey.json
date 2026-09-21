@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "journeyId": "blood-journey",
+  "provider": "ElevenLabs",
+  "modelId": "eleven_v3",
+  "languageCode": "vi",
+  "voiceId": "QqID1ZB0DTItNxAKGBNW",
+  "voiceName": "Viết Linh",
+  "outputFormat": "mp3_44100_128",
+  "generatedAt": "2026-09-21T08:56:40.056Z",
+  "beats": [
+    {
+      "beatId": "return",
+      "audioUrl": "/audio/blood-journey/01-return.mp3",
+      "alignmentUrl": "/audio/blood-journey/alignment/01-return.json",
+      "durationSeconds": 8.08,
+      "audioSha256": "2ff9d352851a1791758d2dd5c9ee3e06b8b55011be114ecd80e36d46987f0a1e",
+      "alignmentSha256": "6eeebdd04278227c938203d19c7b20ae5c8a6f0a1f56a540c6a7fab20483748f"
+    },
+    {
+      "beatId": "right-heart",
+      "audioUrl": "/audio/blood-journey/02-right-heart.mp3",
+      "alignmentUrl": "/audio/blood-journey/alignment/02-right-heart.json",
+      "durationSeconds": 7.28,
+      "audioSha256": "41ea1f36e53e3591c0f05fe5fe30021cb93e758dcab0e7b676e7a823f4de4e90",
+      "alignmentSha256": "49246201c53588b931f8171e70ff47f5ef5c0d91dffa8b25194f4d9705ad4b3a"
+    },
+    {
+      "beatId": "to-lungs",
+      "audioUrl": "/audio/blood-journey/03-to-lungs.mp3",
+      "alignmentUrl": "/audio/blood-journey/alignment/03-to-lungs.json",
+      "durationSeconds": 6.08,
+      "audioSha256": "0f9659e714abea00741cd79a9490795d0717c7ed49efb5041e5c18830fe0ac6b",
+      "alignmentSha256": "af9e92a9ab2f2933d75f878e326feee85c78d702fbb862683e4dae1d64f7f432"
+    },
+    {
+      "beatId": "gas-exchange",
+      "audioUrl": "/audio/blood-journey/04-gas-exchange.mp3",
+      "alignmentUrl": "/audio/blood-journey/alignment/04-gas-exchange.json",
+      "durationSeconds": 7.76,
+      "audioSha256": "1ad90f0d6462a93f49263fa9095b40b03b25441f6702dd55c7ac3b21a733128f",
+      "alignmentSha256": "4b36f9fe23d8439d3a9916dbdb18ed8c05706007e631d66fabad9b75b934d22d"
+    },
+    {
+      "beatId": "left-heart",
+      "audioUrl": "/audio/blood-journey/05-left-heart.mp3",
+      "alignmentUrl": "/audio/blood-journey/alignment/05-left-heart.json",
+      "durationSeconds": 6.4,
+      "audioSha256": "c8b0df5d3f69dc99b85ffb58081e240173ba091b5add3b8856e2ac503a6891d4",
+      "alignmentSha256": "90d5e6ba613920b9ed86d9e1328a479c7bd3a5a15e9bbe48ee138e1dd48a7fe4"
+    },
+    {
+      "beatId": "aorta",
+      "audioUrl": "/audio/blood-journey/06-aorta.mp3",
+      "alignmentUrl": "/audio/blood-journey/alignment/06-aorta.json",
+      "durationSeconds": 8.16,
+      "audioSha256": "b14e9fbb4cc3e5021bcaa38184b6e454f328c55637c02be81c89215100d9f106",
+      "alignmentSha256": "41a563bcce858dac0aa690bbae7deea6194b7db65efdbec841a11746cae4b443"
+    },
+    {
+      "beatId": "to-tissues",
+      "audioUrl": "/audio/blood-journey/07-to-tissues.mp3",
+      "alignmentUrl": "/audio/blood-journey/alignment/07-to-tissues.json",
+      "durationSeconds": 7.04,
+      "audioSha256": "755906d6ea3b4d76e615a44d021b6b1ae58b9c6d1d13a1d39dd73b05d9435f8b",
+      "alignmentSha256": "9549e5296575d5313d602baf4d5636fc69414040401670c9d2671b3214501939"
+    },
+    {
+      "beatId": "cycle",
+      "audioUrl": "/audio/blood-journey/08-cycle.mp3",
+      "alignmentUrl": "/audio/blood-journey/alignment/08-cycle.json",
+      "durationSeconds": 7.28,
+      "audioSha256": "0f41505edf4b0dc2ccc2400287c62d650ee57f7577c1d9fdfba46463139f0e13",
+      "alignmentSha256": "01452ed3c747857d6ba2a45211f93be3691ea2019f711c3fce3ee6a046306ce5"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "id": "hra-female-atlas-manifest",
+      "sourceId": "hra-female-v1-10",
+      "atlas": "female",
+      "version": "united-female v1.5 + abdominal layers v1.10",
+      "license": "CC BY 4.0",
+      "url": "https://humanatlas.io/3d-reference-library",
+      "localPath": "public/models/atlas-female.json",
+      "sha256": "5bcecd43adaa4ef22bb1550db3d484bdab18284a2940d9cd4910b5a237be553a",
+      "coordinateNote": "Canonical HRA female coordinate frame; abdomen layers were aligned without donor-space reinterpretation."
+    },
+    {
+      "id": "hra-female-abdomen-binary",
+      "sourceId": "hra-female-v1-10",
+      "atlas": "female",
+      "version": "abdominal layers v1.10",
+      "license": "CC BY 4.0",
+      "url": "https://humanatlas.io/3d-reference-library",
+      "localPath": "public/models/female-abdomen.bin",
+      "sha256": "a99be27200996ef1b463775bd4c991409051fd33245d2602088fb45c1394f281",
+      "coordinateNote": "Positions remain in the same normalized HRA female frame used by atlas-female.json."
+    }
+  ]
+}

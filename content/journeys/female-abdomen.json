@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "female-abdomen",
+  "title": "Vùng bụng nữ",
+  "eyebrow": "Chuyên đề tương tác",
+  "summary": "Từ lớp mỡ đến không gian chậu",
+  "locale": "vi-VN",
+  "atlas": "female",
+  "hero": {"countLabel": "05 lớp", "accent": "#d9c4a1"},
+  "beats": [
+    {
+      "id": "map", "number": "01", "kicker": "Định vị", "title": "Một không gian, nhiều lớp.",
+      "lead": "Bụng không phải một chiếc hộp rỗng. Các tạng nằm trước–sau, trên–dưới và tiếp tục xuống vùng chậu.",
+      "body": "Xương chậu tạo mốc phía dưới. Gan chiếm phần lớn bụng trên bên phải; ruột non nằm giữa, đại tràng tạo một khung; tử cung và bàng quang nằm thấp trong chậu.",
+      "factLabel": "Điểm cần nhớ", "factText": "Vị trí cơ quan có thể thay đổi theo tư thế, nhịp thở và độ đầy của bàng quang hoặc ruột.",
+      "factIds": ["fa-map-composite"], "disclosure": "ATLAS THAM CHIẾU",
+      "transcript": "Hãy nhìn vùng bụng như một không gian có nhiều lớp. Gan nằm cao bên phải, ruột ở giữa, còn tử cung và bàng quang nằm thấp trong khung chậu.",
+      "scene": {"atlas":"female","systems":["skeletal","digestive","urinary","reproductive"],"focusConcepts":["pelvis","liver","small intestine","colon","uterus","urinary bladder"],"isolate":true,"lens":"solid","camera":"abdomen-wide","effect":"study-flow","accent":"#d9c4a1"}
+    },
+    {
+      "id": "adipose", "number": "02", "kicker": "Từ ngoài vào trong", "title": "Mỡ không chỉ là một lớp.",
+      "lead": "Mỡ dưới da và mạc nối đều là mô mỡ, nhưng nằm ở hai vị trí giải phẫu khác nhau.",
+      "body": "Lớp mỡ dưới da nằm ngay dưới bề mặt thành bụng. Mạc nối là một nếp phúc mạc giàu mỡ phủ lên nhiều tạng trong ổ bụng. Nó không đồng nghĩa với toàn bộ mỡ nội tạng.",
+      "factLabel": "Dữ liệu atlas", "factText": "Hai lớp màu hổ phách là mesh HRA nữ v1.10, không phải bề mặt dựng thủ tục.",
+      "factIds": ["fa-adipose-coverage"], "disclosure": "ATLAS THAM CHIẾU",
+      "transcript": "Đi từ ngoài vào trong, ta gặp mỡ dưới da ngay bên dưới thành bụng. Sâu hơn, mạc nối là một nếp giàu mỡ phủ lên nhiều cơ quan, nhưng không đại diện cho toàn bộ mỡ nội tạng.",
+      "scene": {"atlas":"female","systems":["adipose","digestive"],"focusConcepts":["subcutaneous abdominal adipose tissue","omentum","small intestine","colon"],"isolate":true,"lens":"solid","camera":"abdomen-front","effect":"study-flow","accent":"#e1bd79"}
+    },
+    {
+      "id": "digestion", "number": "03", "kicker": "Tiêu hóa", "title": "Một dây chuyền phối hợp.",
+      "lead": "Gan, túi mật, tụy và ruột cùng tham gia xử lý thức ăn, hấp thu chất dinh dưỡng và nước.",
+      "body": "Tá tràng nhận dịch mật và men tụy. Ruột non đảm nhiệm phần lớn hấp thu; đại tràng tiếp tục hấp thu nước và tạo khuôn phân. Ánh sáng chạy trên bề mặt chỉ giúp theo dõi mạch kể chuyện.",
+      "factLabel": "Khoảng trống nguồn", "factText": "HRA nữ hiện chưa có mesh dạ dày và thực quản trong assembly này.",
+      "factIds": ["fa-digestion-gap","fa-motion-disclosure"], "disclosure": "ATLAS + MINH HỌA GIÁO DỤC",
+      "transcript": "Trong dây chuyền tiêu hóa, gan, túi mật, tụy và ruột phối hợp với nhau. Ruột non hấp thu phần lớn chất dinh dưỡng, còn đại tràng tiếp tục thu hồi nước.",
+      "scene": {"atlas":"female","systems":["digestive"],"focusConcepts":["liver","gallbladder","pancreas","duodenum","small intestine","colon"],"isolate":true,"lens":"solid","camera":"abdomen-close","effect":"study-flow","accent":"#dd9d7f"}
+    },
+    {
+      "id": "pelvis", "number": "04", "kicker": "Không gian chậu nữ", "title": "Ba cơ quan, một khoảng hẹp.",
+      "lead": "Bàng quang ở phía trước, tử cung ở giữa và trực tràng ở phía sau.",
+      "body": "Buồng trứng nằm hai bên tử cung; vòi tử cung nối vùng gần tử cung với phía buồng trứng. Quan hệ không gian này giúp giải thích vì sao thay đổi ở một cơ quan có thể tạo cảm giác ở vùng lân cận.",
+      "factLabel": "Mức chi tiết", "factText": "Buồng trứng dùng để định vị đại thể; mesh hiện tại không đủ cho bài vi cấu trúc.",
+      "factIds": ["fa-ovary-detail"], "disclosure": "ATLAS THAM CHIẾU",
+      "transcript": "Trong khung chậu nữ, bàng quang nằm phía trước, tử cung ở giữa và trực tràng ở phía sau. Buồng trứng nằm hai bên, gần các vòi tử cung.",
+      "scene": {"atlas":"female","systems":["reproductive","urinary","digestive"],"focusConcepts":["urinary bladder","uterus","ovary","fallopian tube","rectum"],"isolate":true,"lens":"solid","camera":"pelvis-side","effect":"study-flow","accent":"#dfa6af"}
+    },
+    {
+      "id": "circulation", "number": "05", "kicker": "Máu và bạch huyết", "title": "Hai mạng vận chuyển khác nhau.",
+      "lead": "Mạch máu nuôi mô; hệ bạch huyết thu hồi dịch mô và tham gia miễn dịch.",
+      "body": "Atlas thể hiện mạch tử cung và một hạch mạc treo mẫu để đối chiếu hai hệ trong cùng vùng. Chúng đủ để hiểu nguyên tắc, nhưng không phải bản đồ dẫn lưu bạch huyết bụng–chậu hoàn chỉnh.",
+      "factLabel": "Trung thực dữ liệu", "factText": "Không có đường hạt nào được trình bày như mạch bạch huyết đo từ người thật.",
+      "factIds": ["fa-lymph-gap","fa-motion-disclosure"], "disclosure": "ATLAS + MINH HỌA GIÁO DỤC",
+      "transcript": "Mạch máu đưa ô-xi và chất dinh dưỡng đến mô. Hệ bạch huyết thu hồi phần dịch dư và hỗ trợ miễn dịch; hai mạng này liên quan với nhau nhưng không phải là một.",
+      "scene": {"atlas":"female","systems":["arterial","venous","lymphatic","reproductive"],"focusConcepts":["blood vasculature of uterus","uterus","ovary","Yao lymph node"],"isolate":true,"lens":"xray","camera":"pelvis-circulation","effect":"study-flow","accent":"#8fc5ad"}
+    }
+  ],
+  "narration": {"optional": true, "speed": 1, "transcript": "Nội dung thuyết minh được trình bày trực tiếp theo từng chương trên màn hình."}
+}

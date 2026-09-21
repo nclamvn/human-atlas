@@ -1,0 +1,444 @@
+{
+  "schemaVersion": 1,
+  "collectionId": "product",
+  "locale": "vi-VN",
+  "provider": "ElevenLabs",
+  "modelId": "eleven_v3",
+  "languageCode": "vi",
+  "voiceId": "QqID1ZB0DTItNxAKGBNW",
+  "voiceName": "Viết Linh",
+  "outputFormat": "mp3_44100_128",
+  "generatedAt": "2026-09-21T09:07:58.852Z",
+  "clips": [
+    {
+      "id": "intro",
+      "group": "interface",
+      "transcript": "Chào mừng bạn đến với Cơ thể người, một thế giới bên trong bạn. Hãy chọn một hành trình, một hệ cơ quan, hoặc chạm trực tiếp vào mô hình để bắt đầu khám phá.",
+      "audioUrl": "/audio/product/intro.mp3",
+      "alignmentUrl": "/audio/product/alignment/intro.json",
+      "durationSeconds": 9.6,
+      "audioSha256": "07dc5c715dfbce9cefda22183728907ccd5e2540e76cda3d21b48e306b7f2f56",
+      "alignmentSha256": "98d0fa58923a647871ddcd3cf0d57198f49bcd625d6a0c2ca1ff25f0f7372a2c"
+    },
+    {
+      "id": "about",
+      "group": "interface",
+      "transcript": "Mô hình nam sử dụng dữ liệu Body Parts 3D. Mô hình nữ sử dụng Human Reference Atlas của Hub Map. Đây là trải nghiệm giáo dục giúp hình dung cơ thể, không phải công cụ chẩn đoán y khoa.",
+      "audioUrl": "/audio/product/about.mp3",
+      "alignmentUrl": "/audio/product/alignment/about.json",
+      "durationSeconds": 13.36,
+      "audioSha256": "5a0e2d5db519845abb1b800f27f858a352ee1c9f69a9c00ec28757be7d9dafe2",
+      "alignmentSha256": "cf378eed734815a2222420b79d10db21728a90fcd074657ba77e9cea73c5e5be"
+    },
+    {
+      "id": "lesson-heart-01",
+      "group": "lesson",
+      "transcript": "Một nhịp tim. Trở về tim. Máu từ cơ thể trở về tâm nhĩ phải qua các tĩnh mạch chủ, rồi đi qua van ba lá xuống tâm thất phải.",
+      "audioUrl": "/audio/product/lesson-heart-01.mp3",
+      "alignmentUrl": "/audio/product/alignment/lesson-heart-01.json",
+      "durationSeconds": 9.28,
+      "audioSha256": "69c4198bb4fb104ba6bc7169546fb32a1cab65c718f397dcfca6273387627d0b",
+      "alignmentSha256": "3d7df0b1fd40d535bd11060113d5185432c5f3b9649893f67d570a095cbb39a2"
+    },
+    {
+      "id": "lesson-heart-02",
+      "group": "lesson",
+      "transcript": "Một nhịp tim. Đến phổi. Tâm thất phải co, đưa máu qua van động mạch phổi đến phổi. Máu nhận ôxy và thải khí cacbonic.",
+      "audioUrl": "/audio/product/lesson-heart-02.mp3",
+      "alignmentUrl": "/audio/product/alignment/lesson-heart-02.json",
+      "durationSeconds": 8.72,
+      "audioSha256": "6283d8552eaf387ec91a7107e2705beb0ce52a08271df54efe1ab48e3fdc62dc",
+      "alignmentSha256": "74e31e091be28cb4a17d886319ee24f62ea8707c8c392a0e6b722d8e0a5ef8e1"
+    },
+    {
+      "id": "lesson-heart-03",
+      "group": "lesson",
+      "transcript": "Một nhịp tim. Trở lại tim trái. Máu giàu ôxy theo tĩnh mạch phổi về tâm nhĩ trái, rồi qua van hai lá xuống tâm thất trái.",
+      "audioUrl": "/audio/product/lesson-heart-03.mp3",
+      "alignmentUrl": "/audio/product/alignment/lesson-heart-03.json",
+      "durationSeconds": 9.6,
+      "audioSha256": "4a429168b947b521f690cd127185bbc4a11ae80bb6eb82d19e26012bb3e7822e",
+      "alignmentSha256": "20a11055798a7eb654a61cec8111b88fa148f38786a5d2ede308a54e77ab9cb0"
+    },
+    {
+      "id": "lesson-heart-04",
+      "group": "lesson",
+      "transcript": "Một nhịp tim. Đi nuôi cơ thể. Tâm thất trái co, đẩy máu qua van động mạch chủ đến các mô. Các van giúp giữ dòng máu đi một chiều.",
+      "audioUrl": "/audio/product/lesson-heart-04.mp3",
+      "alignmentUrl": "/audio/product/alignment/lesson-heart-04.json",
+      "durationSeconds": 8.96,
+      "audioSha256": "5833cd14159465242c1111c8b7660ca0a61d3d36c5b38653bfbb2defde52e323",
+      "alignmentSha256": "e752cb932514311b82ca178623204be08cc1f080eba7fa89da28fb1d0b8e8f7b"
+    },
+    {
+      "id": "lesson-lungs-01",
+      "group": "lesson",
+      "transcript": "Một hơi thở. Hít vào. Cơ hoành co và hạ xuống; lồng ngực mở rộng. Áp suất trong phổi giảm, không khí theo đường dẫn khí đi vào.",
+      "audioUrl": "/audio/product/lesson-lungs-01.mp3",
+      "alignmentUrl": "/audio/product/alignment/lesson-lungs-01.json",
+      "durationSeconds": 8.96,
+      "audioSha256": "7bac29153e2b9e15b48b0f9cdba5f5127972870d56547ff6ec85225ff29a4135",
+      "alignmentSha256": "dbfbab409333bd4a231dd18780ad9c3c601c34e46457bbccbc189425b8bdb66e"
+    },
+    {
+      "id": "lesson-lungs-02",
+      "group": "lesson",
+      "transcript": "Một hơi thở. Trao đổi khí. Trong phế nang, ôxy đi qua thành rất mỏng để vào máu. Khí cacbonic từ máu đi vào phế nang.",
+      "audioUrl": "/audio/product/lesson-lungs-02.mp3",
+      "alignmentUrl": "/audio/product/alignment/lesson-lungs-02.json",
+      "durationSeconds": 9.36,
+      "audioSha256": "3d5d420c2f1d5521c9e194735995c2ee98a71bdb5a39530dcbb2134277937dea",
+      "alignmentSha256": "904c9fffd5da333c103e1938fd7ee85de9753e9bdfa8d147357a67f099c620d9"
+    },
+    {
+      "id": "lesson-lungs-03",
+      "group": "lesson",
+      "transcript": "Một hơi thở. Thở ra. Khi thở ra yên tĩnh, cơ hoành giãn và phổi đàn hồi trở lại. Không khí mang khí cacbonic đi ra ngoài.",
+      "audioUrl": "/audio/product/lesson-lungs-03.mp3",
+      "alignmentUrl": "/audio/product/alignment/lesson-lungs-03.json",
+      "durationSeconds": 9.04,
+      "audioSha256": "4d74ca1267d86ccfc058df09c3882365403c671293b20b1487c692d0d3ce528f",
+      "alignmentSha256": "423d749d51613a49d52f5caef6976d223dd5b5e0938101a71bec45523d459b86"
+    },
+    {
+      "id": "lesson-digestion-01",
+      "group": "lesson",
+      "transcript": "Hành trình thức ăn. Đưa thức ăn xuống. Sau khi nhai và nuốt, thức ăn đi qua thực quản. Những đợt co cơ đẩy thức ăn về phía dạ dày.",
+      "audioUrl": "/audio/product/lesson-digestion-01.mp3",
+      "alignmentUrl": "/audio/product/alignment/lesson-digestion-01.json",
+      "durationSeconds": 8.8,
+      "audioSha256": "6b42e21593c2116a90087fe0a133f44c18b67227d20087b8b30e4c4440d33546",
+      "alignmentSha256": "945c0fbe6fcedf001e4fb06dddd4b81f7ae76a238371af626536323d578f195f"
+    },
+    {
+      "id": "lesson-digestion-02",
+      "group": "lesson",
+      "transcript": "Hành trình thức ăn. Trộn trong dạ dày. Dạ dày co bóp, trộn thức ăn với dịch tiêu hóa rồi đưa hỗn hợp xuống ruột non từng phần.",
+      "audioUrl": "/audio/product/lesson-digestion-02.mp3",
+      "alignmentUrl": "/audio/product/alignment/lesson-digestion-02.json",
+      "durationSeconds": 8.32,
+      "audioSha256": "9f9f00a202c74b7590ffdf3883a8f65ea248f8d42fa86569267aa617c813dee5",
+      "alignmentSha256": "076903303fe26ed9ce4a0c46341c7ed1b47000604264946dfecfb115e8685369"
+    },
+    {
+      "id": "lesson-digestion-03",
+      "group": "lesson",
+      "transcript": "Hành trình thức ăn. Hấp thu ở ruột non. Dịch từ tụy và mật hỗ trợ tiêu hóa. Phần lớn chất dinh dưỡng được hấp thu qua thành ruột non.",
+      "audioUrl": "/audio/product/lesson-digestion-03.mp3",
+      "alignmentUrl": "/audio/product/alignment/lesson-digestion-03.json",
+      "durationSeconds": 9.76,
+      "audioSha256": "0c352d64ef6e95b63a61d17891ecfde7cb4561b3b7cee61e78e4b635eedb7a79",
+      "alignmentSha256": "7582cc5223453d1ee78d4dfb24837e81bce474e63c2aec591a565b5f002bcabf"
+    },
+    {
+      "id": "lesson-digestion-04",
+      "group": "lesson",
+      "transcript": "Hành trình thức ăn. Thu hồi nước. Ruột già hấp thu thêm nước. Phần còn lại tạo thành phân, được giữ ở trực tràng trước khi ra ngoài.",
+      "audioUrl": "/audio/product/lesson-digestion-04.mp3",
+      "alignmentUrl": "/audio/product/alignment/lesson-digestion-04.json",
+      "durationSeconds": 8.4,
+      "audioSha256": "365c80a6117c2a87ddea8c38b97458c4e3202a830ffdb8f076c37bf326e44ef5",
+      "alignmentSha256": "21211d38a2a632e6e9bcac5c9608ce9ea002f51446a6aac25d065dd8f1b06acf"
+    },
+    {
+      "id": "lesson-kidneys-01",
+      "group": "lesson",
+      "transcript": "Bộ lọc của cơ thể. Máu đến thận. Máu theo động mạch thận đến các đơn vị lọc rất nhỏ gọi là nephron.",
+      "audioUrl": "/audio/product/lesson-kidneys-01.mp3",
+      "alignmentUrl": "/audio/product/alignment/lesson-kidneys-01.json",
+      "durationSeconds": 8.32,
+      "audioSha256": "4a0a12777702c2b18f410103f70881092cea8149805d4ace25dead639912a98f",
+      "alignmentSha256": "eccf9ba38925b125d8b7303443dd6ca82603a9e09cb6f7f2ec1663e120b3be25"
+    },
+    {
+      "id": "lesson-kidneys-02",
+      "group": "lesson",
+      "transcript": "Bộ lọc của cơ thể. Lọc qua cầu thận. Nước và nhiều chất nhỏ đi từ máu vào dịch lọc. Tế bào máu và phần lớn protein được giữ lại trong mạch.",
+      "audioUrl": "/audio/product/lesson-kidneys-02.mp3",
+      "alignmentUrl": "/audio/product/alignment/lesson-kidneys-02.json",
+      "durationSeconds": 10.4,
+      "audioSha256": "1dfe3efc0823b6ff08a39d49bed1b63fc75c9f0f6f61eeae716130b3d98c609b",
+      "alignmentSha256": "c7831523160312774f37780c87dc5b176c7d28a9e6e36f5d8bb2af77b3f038ca"
+    },
+    {
+      "id": "lesson-kidneys-03",
+      "group": "lesson",
+      "transcript": "Bộ lọc của cơ thể. Giữ lại chất cần thiết. Ống thận tái hấp thu phần lớn nước cùng nhiều chất cần thiết; đồng thời điều chỉnh các chất được thải ra.",
+      "audioUrl": "/audio/product/lesson-kidneys-03.mp3",
+      "alignmentUrl": "/audio/product/alignment/lesson-kidneys-03.json",
+      "durationSeconds": 8.88,
+      "audioSha256": "06a3a1b00f04a2b79f539cb8fc937ab95b6d6a9129a1d806cf5b6bd343b0aa48",
+      "alignmentSha256": "9726c6ccb3f770e1654a9bfb18fe5258408a1ab709878fa9ff2ced134197dc62"
+    },
+    {
+      "id": "lesson-kidneys-04",
+      "group": "lesson",
+      "transcript": "Bộ lọc của cơ thể. Tạo và dẫn nước tiểu. Dịch còn lại trở thành nước tiểu, đi theo niệu quản xuống bàng quang để được lưu trữ.",
+      "audioUrl": "/audio/product/lesson-kidneys-04.mp3",
+      "alignmentUrl": "/audio/product/alignment/lesson-kidneys-04.json",
+      "durationSeconds": 7.6,
+      "audioSha256": "3a017aeb0c646b0f1f7dbff09417f6fd6687e115c6aa53cc39fb1c4c90b96ef5",
+      "alignmentSha256": "f88c495e12fc02c48a315955e92ec8acb7539fa7abae7de4476e0794e48ac6df"
+    },
+    {
+      "id": "system-skeletal",
+      "group": "system",
+      "transcript": "Bộ xương. Xương nâng đỡ cơ thể, bảo vệ cơ quan và tạo chỗ bám cho cơ. Tủy trong một số xương tham gia tạo tế bào máu.",
+      "audioUrl": "/audio/product/system-skeletal.mp3",
+      "alignmentUrl": "/audio/product/alignment/system-skeletal.json",
+      "durationSeconds": 8.64,
+      "audioSha256": "dcd229a4ae2a55cadcaf1d56a4790159af63ad0c5647647edfd9da28ee999025",
+      "alignmentSha256": "870ed9dece244e360948489e93b4abfb1cc1407ce99e45da6d81b05707921f1e"
+    },
+    {
+      "id": "system-muscular",
+      "group": "system",
+      "transcript": "Hệ cơ. Cơ co lại để tạo lực, giúp ta vận động và giữ tư thế. Gân truyền lực từ cơ đến xương.",
+      "audioUrl": "/audio/product/system-muscular.mp3",
+      "alignmentUrl": "/audio/product/alignment/system-muscular.json",
+      "durationSeconds": 7.44,
+      "audioSha256": "38da06e3b24fd985e9a4c151e9b2f4045f2ccae2cfcf5ac4d727988555722c88",
+      "alignmentSha256": "4fd0428933ba8f4b93a164b9fb2d1bf73b10eb2b8c44638696adf20e037468f9"
+    },
+    {
+      "id": "system-cardiac",
+      "group": "system",
+      "transcript": "Tim. Tim là khối cơ rỗng gồm bốn buồng. Mỗi nhịp co bóp đẩy máu qua phổi và đi khắp cơ thể.",
+      "audioUrl": "/audio/product/system-cardiac.mp3",
+      "alignmentUrl": "/audio/product/alignment/system-cardiac.json",
+      "durationSeconds": 6.56,
+      "audioSha256": "85004e77fdf39fad0db481af1367f3ae7c5f851d037825c4aa6529ffcc01d7f7",
+      "alignmentSha256": "0703d9a9be78aeaafd0382ed991cfb28c6ae6fccf2e9b90ee0ec743f6b0bc05b"
+    },
+    {
+      "id": "system-arterial",
+      "group": "system",
+      "transcript": "Động mạch. Động mạch đưa máu rời tim. Trong vòng tuần hoàn phổi, động mạch phổi mang máu ít ôxy đến phổi.",
+      "audioUrl": "/audio/product/system-arterial.mp3",
+      "alignmentUrl": "/audio/product/alignment/system-arterial.json",
+      "durationSeconds": 6.88,
+      "audioSha256": "ce09546cabe6466474644d325e2b220825798a4b1106d7a8a8e6d4f45a9e79b8",
+      "alignmentSha256": "144ad5e5426526096f1cefaf8960538719bcb726c5eac82aa71303014eea8166"
+    },
+    {
+      "id": "system-venous",
+      "group": "system",
+      "transcript": "Tĩnh mạch. Tĩnh mạch đưa máu trở về tim. Tĩnh mạch phổi đưa máu giàu ôxy từ phổi về tâm nhĩ trái.",
+      "audioUrl": "/audio/product/system-venous.mp3",
+      "alignmentUrl": "/audio/product/alignment/system-venous.json",
+      "durationSeconds": 7.28,
+      "audioSha256": "04897392c7fc8935051c67d0cdf6c10b3044e56746a90e8d798977d40af3cd3c",
+      "alignmentSha256": "74592d0ff17d147150d85c2973c494196ebb24c9ed7d25b5f36e718e4ee36340"
+    },
+    {
+      "id": "system-nervous",
+      "group": "system",
+      "transcript": "Hệ thần kinh. Não, tủy sống và các dây thần kinh tiếp nhận thông tin, điều khiển vận động và phối hợp hoạt động của cơ thể.",
+      "audioUrl": "/audio/product/system-nervous.mp3",
+      "alignmentUrl": "/audio/product/alignment/system-nervous.json",
+      "durationSeconds": 7.68,
+      "audioSha256": "284c977463d0d96bb7d48e9ef79e4ae8854920183dd128faf198cf2f7c87d371",
+      "alignmentSha256": "253254951645a9717820ef7bd2cafb0856cbf236844e9d0a4b0a5174019e1c9d"
+    },
+    {
+      "id": "system-digestive",
+      "group": "system",
+      "transcript": "Hệ tiêu hóa. Ống tiêu hóa và các cơ quan hỗ trợ biến thức ăn thành những chất cơ thể có thể hấp thu, đồng thời xử lý phần còn lại.",
+      "audioUrl": "/audio/product/system-digestive.mp3",
+      "alignmentUrl": "/audio/product/alignment/system-digestive.json",
+      "durationSeconds": 8.96,
+      "audioSha256": "e8cf338a72c5dd19a422076553566d27fbbac62a6ba59817d85aba0457a898e5",
+      "alignmentSha256": "54cffd34072d75992ebff0c383d725a286959086752efae3c367cedc9e8e023e"
+    },
+    {
+      "id": "system-respiratory",
+      "group": "system",
+      "transcript": "Hệ hô hấp. Đường dẫn khí đưa không khí vào phổi. Tại phế nang, ôxy đi vào máu và khí cacbonic đi theo chiều ngược lại.",
+      "audioUrl": "/audio/product/system-respiratory.mp3",
+      "alignmentUrl": "/audio/product/alignment/system-respiratory.json",
+      "durationSeconds": 8.32,
+      "audioSha256": "cfc8bacc6b0bee0f7dd80b842c4ec669ae1e7b433012a08985ae71bbb5d1fea1",
+      "alignmentSha256": "73f5ad393c245e3a1205faf246059b2caff812e21851d6cfcbf1e9a79f15ac74"
+    },
+    {
+      "id": "system-urinary",
+      "group": "system",
+      "transcript": "Hệ tiết niệu. Thận điều chỉnh nước và các chất hòa tan trong máu. Nước tiểu đi qua niệu quản, được giữ ở bàng quang rồi ra ngoài qua niệu đạo.",
+      "audioUrl": "/audio/product/system-urinary.mp3",
+      "alignmentUrl": "/audio/product/alignment/system-urinary.json",
+      "durationSeconds": 9.44,
+      "audioSha256": "93738c58cc8baae7f00555ce3d8dcea6ab36e587c9bbe5e18d0dba2dce598890",
+      "alignmentSha256": "74f5297b3057fc1439d9a702ef1a27158ef4c3e2889b0aa5fd751e789ef435e1"
+    },
+    {
+      "id": "system-reproductive",
+      "group": "system",
+      "transcript": "Hệ sinh sản. Các cơ quan sinh sản tham gia tạo tế bào sinh dục và hoóc-môn. Mỗi atlas thể hiện những cấu trúc có trong nguồn tham chiếu tương ứng.",
+      "audioUrl": "/audio/product/system-reproductive.mp3",
+      "alignmentUrl": "/audio/product/alignment/system-reproductive.json",
+      "durationSeconds": 9.2,
+      "audioSha256": "0f9c63980ac81bb01cce0433859d0a9b207704c88e92e923fd500f3ae4ef6b20",
+      "alignmentSha256": "da8937adc01349e3296bfc6806a6ad40c3e9345aa3eba29d35e10781e857ef4f"
+    },
+    {
+      "id": "system-lymphatic",
+      "group": "system",
+      "transcript": "Hệ bạch huyết. Mạch bạch huyết đưa dịch dư từ mô trở lại tuần hoàn. Hạch bạch huyết và các cơ quan liên quan tham gia bảo vệ cơ thể.",
+      "audioUrl": "/audio/product/system-lymphatic.mp3",
+      "alignmentUrl": "/audio/product/alignment/system-lymphatic.json",
+      "durationSeconds": 8.72,
+      "audioSha256": "e22af68081d06a8e2937f90faea4a1abded332f188b637d68f358fd1b68fb5f5",
+      "alignmentSha256": "f77623b0e4983663501e751ea9506e81d9e4bcdb5ef9d9d59d3d43013503d7c1"
+    },
+    {
+      "id": "system-endocrine",
+      "group": "system",
+      "transcript": "Hệ nội tiết. Các tuyến nội tiết đưa hoóc-môn vào máu, góp phần điều hòa tăng trưởng, chuyển hóa và nhiều hoạt động khác.",
+      "audioUrl": "/audio/product/system-endocrine.mp3",
+      "alignmentUrl": "/audio/product/alignment/system-endocrine.json",
+      "durationSeconds": 6.64,
+      "audioSha256": "528fdb6882256b4547d4e8bcfa3070ac0b99db602b22118bd620492219dbefbc",
+      "alignmentSha256": "54b5ccff85e3cee636ce35d11ce99fe6d9524184a0691afdc2ee37225b81d088"
+    },
+    {
+      "id": "system-integumentary",
+      "group": "system",
+      "transcript": "Bề mặt cơ thể. Da tạo hàng rào bảo vệ, tiếp nhận cảm giác và tham gia điều hòa thân nhiệt. Lớp bề mặt giúp định vị các cơ quan bên trong.",
+      "audioUrl": "/audio/product/system-integumentary.mp3",
+      "alignmentUrl": "/audio/product/alignment/system-integumentary.json",
+      "durationSeconds": 8.48,
+      "audioSha256": "b547695128319ca7f896f5dc19d90a4736ff84cbec3426f7d36c57310be00517",
+      "alignmentSha256": "63cd7c7c713d72a82cdcd689255f7af57019943e1e59a439501e17f861c03dec"
+    },
+    {
+      "id": "system-adipose",
+      "group": "system",
+      "transcript": "Mô mỡ. Mô mỡ dự trữ năng lượng, đệm và bảo vệ cấu trúc. Mỡ dưới da và mạc nối nằm ở những lớp giải phẫu khác nhau.",
+      "audioUrl": "/audio/product/system-adipose.mp3",
+      "alignmentUrl": "/audio/product/alignment/system-adipose.json",
+      "durationSeconds": 8.96,
+      "audioSha256": "0fb0d2e4afbc8713a763029c255a285901d2a67cfaa99a7b129f89ac1f946422",
+      "alignmentSha256": "f1e6bf34d7a348533e291d88cf89cd095ad4c67c7f94c0c962c18221828b0be4"
+    },
+    {
+      "id": "system-connective",
+      "group": "system",
+      "transcript": "Mô liên kết. Sụn, dây chằng và các mô liên kết nâng đỡ, kết nối và giữ ổn định các cấu trúc trong cơ thể.",
+      "audioUrl": "/audio/product/system-connective.mp3",
+      "alignmentUrl": "/audio/product/alignment/system-connective.json",
+      "durationSeconds": 7.28,
+      "audioSha256": "3eaa9404fa413b40ea3b6b37b742267b989bf5bda8389787f0846b4d9de18552",
+      "alignmentSha256": "0ad0a4b850d859a5c258ab5b1e51faadc4a60388387c1cdc156d70f7a6659f23"
+    },
+    {
+      "id": "system-sensory",
+      "group": "system",
+      "transcript": "Cơ quan cảm giác. Mắt, tai và những cấu trúc liên quan thu nhận thông tin từ môi trường rồi truyền đến hệ thần kinh.",
+      "audioUrl": "/audio/product/system-sensory.mp3",
+      "alignmentUrl": "/audio/product/alignment/system-sensory.json",
+      "durationSeconds": 7.44,
+      "audioSha256": "8b3df863b750ba555ee50250de9b49e04f5d86972bffa1f7a32e9076b2f38f25",
+      "alignmentSha256": "915b87249b99dfca5f67faedbb8acdc886c5e876924ee140aa8834341b76ab68"
+    },
+    {
+      "id": "system-pregnancy",
+      "group": "system",
+      "transcript": "Tham chiếu thai kỳ. Các mẫu nhau thai và dây rốn được tách riêng khỏi cấu trúc người trưởng thành mặc định.",
+      "audioUrl": "/audio/product/system-pregnancy.mp3",
+      "alignmentUrl": "/audio/product/alignment/system-pregnancy.json",
+      "durationSeconds": 6.96,
+      "audioSha256": "eef05a72d698063650846fc1932f24c4092a337d281875737a166fa7433d93ae",
+      "alignmentSha256": "f9b567c6862d00f1b1b98f3ef3bfc58adfae7359534ecfcb9984282f253dd6d0"
+    },
+    {
+      "id": "organ-heart",
+      "group": "organ",
+      "transcript": "Tim. Tim nằm trong lồng ngực, giữa hai lá phổi. Hai nửa tim phối hợp đưa máu qua phổi để nhận ôxy rồi đi nuôi các mô.",
+      "audioUrl": "/audio/product/organ-heart.mp3",
+      "alignmentUrl": "/audio/product/alignment/organ-heart.json",
+      "durationSeconds": 8.4,
+      "audioSha256": "718979b0a12d2e324ad381bfcaabbeeb5efa76f0af04bb18b30c7dda25571f40",
+      "alignmentSha256": "2cb236e8fdd3faeaa37ff0c7853dd28ea5ad7ad84b405a565d62cb0e97966539"
+    },
+    {
+      "id": "organ-brain",
+      "group": "organ",
+      "transcript": "Não. Não xử lý thông tin từ giác quan, phối hợp vận động, trí nhớ, ngôn ngữ và nhiều hoạt động tự động của cơ thể.",
+      "audioUrl": "/audio/product/organ-brain.mp3",
+      "alignmentUrl": "/audio/product/alignment/organ-brain.json",
+      "durationSeconds": 7.44,
+      "audioSha256": "d9ba15d01efbc198fc8337d6aa2feaac90e77f83cceb8d0952e89d97690e7594",
+      "alignmentSha256": "70be2180527844a3b8e9fa0c256c712ebe0dc8c0bd37835cb272fafddfd9ec6e"
+    },
+    {
+      "id": "organ-liver",
+      "group": "organ",
+      "transcript": "Gan. Gan xử lý nhiều chất dinh dưỡng từ ruột, sản xuất mật và tổng hợp nhiều protein cần thiết cho cơ thể.",
+      "audioUrl": "/audio/product/organ-liver.mp3",
+      "alignmentUrl": "/audio/product/alignment/organ-liver.json",
+      "durationSeconds": 7.04,
+      "audioSha256": "d05224052da73974c903ec1bcec4dfd38620ceb5fb1782d8fd67a1b4b3a1df74",
+      "alignmentSha256": "3997e5a9e0a7b694b68b51256f4f5535a9e96d2c1604057adc6e7844867b530a"
+    },
+    {
+      "id": "organ-stomach",
+      "group": "organ",
+      "transcript": "Dạ dày. Dạ dày là túi cơ nối thực quản với ruột non. Nó chứa, nhào trộn thức ăn và phối hợp với dịch tiêu hóa.",
+      "audioUrl": "/audio/product/organ-stomach.mp3",
+      "alignmentUrl": "/audio/product/alignment/organ-stomach.json",
+      "durationSeconds": 8.24,
+      "audioSha256": "6ef4da5b9d40c4dd055758ba94dc1c8eeeb94e4f5a86f9618408a87d1b3214b5",
+      "alignmentSha256": "51ab5f6ac46d9e69f67a808c6e40be18c41b6d09fe03129ebfcd727c17750f61"
+    },
+    {
+      "id": "organ-pancreas",
+      "group": "organ",
+      "transcript": "Tụy. Tụy tạo dịch tiêu hóa đưa vào ruột non và sản xuất hoóc-môn, trong đó có insulin giúp điều hòa đường huyết.",
+      "audioUrl": "/audio/product/organ-pancreas.mp3",
+      "alignmentUrl": "/audio/product/alignment/organ-pancreas.json",
+      "durationSeconds": 7.84,
+      "audioSha256": "26381f3246f25040b1975f4b6c7c38cb81d6150b2df964ac874a2eed9e8497e5",
+      "alignmentSha256": "5cef1ea6ab713ce8030072fad7d5e91b6fd6325447ecbdbe951da815b95252a6"
+    },
+    {
+      "id": "organ-spleen",
+      "group": "organ",
+      "transcript": "Lách. Lách lọc máu, tham gia loại bỏ tế bào máu già và hỗ trợ đáp ứng miễn dịch.",
+      "audioUrl": "/audio/product/organ-spleen.mp3",
+      "alignmentUrl": "/audio/product/alignment/organ-spleen.json",
+      "durationSeconds": 5.76,
+      "audioSha256": "10dc057b1c0d09b279c50a0f3fc80e13d70a265b356ae842178578f0752c6cea",
+      "alignmentSha256": "b80b4a4f5cd8594b99660218bd7ed26a6f86db99230a705104c0198230416a89"
+    },
+    {
+      "id": "organ-uterus",
+      "group": "organ",
+      "transcript": "Tử cung. Tử cung là cơ quan có thành cơ trong khung chậu. Niêm mạc thay đổi theo chu kỳ và có thể hỗ trợ sự phát triển của thai.",
+      "audioUrl": "/audio/product/organ-uterus.mp3",
+      "alignmentUrl": "/audio/product/alignment/organ-uterus.json",
+      "durationSeconds": 9.12,
+      "audioSha256": "766dad30a956ae0edf68e9738bd1adef38d3873e1a8401149e55a4a8f691c036",
+      "alignmentSha256": "f5c982b91d25b99ed123570c8e70ab9b6c5c2cc61d4c5ada941b7fe2ffb18407"
+    },
+    {
+      "id": "organ-ovary",
+      "group": "organ",
+      "transcript": "Buồng trứng. Buồng trứng chứa các tế bào trứng đang phát triển và sản xuất hoóc-môn sinh dục.",
+      "audioUrl": "/audio/product/organ-ovary.mp3",
+      "alignmentUrl": "/audio/product/alignment/organ-ovary.json",
+      "durationSeconds": 5.2,
+      "audioSha256": "e45c531a2489dab3ddd7be9282481b299cd2e65e70b6ab1fb129eb2fba0bb513",
+      "alignmentSha256": "ba7be5288d08bad658e1f9a7ad1ebd005ee4549e5104d1c5abc9b2d784954bcc"
+    },
+    {
+      "id": "organ-testis",
+      "group": "organ",
+      "transcript": "Tinh hoàn. Tinh hoàn tạo tinh trùng và sản xuất hoóc-môn sinh dục, trong đó có testosterone.",
+      "audioUrl": "/audio/product/organ-testis.mp3",
+      "alignmentUrl": "/audio/product/alignment/organ-testis.json",
+      "durationSeconds": 6.72,
+      "audioSha256": "cc5cb69176e372312a4494018e20a8a8b59c2b48734048cbccf584aa107875fa",
+      "alignmentSha256": "c280937b5b09456a9a7586b33a07f34f95dd5a8caceab19d24631f249266844e"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+asset_id,version,bytes,nodes,meshes,triangles,license,source_url,fitness
+adipose-female,v1.0,695648,4,3,13040,CC BY 4.0,https://cdn.humanatlas.io/digital-objects/ref-organ/adipose-female/v1.0/assets/3d-vh-f-adipose.glb,core-gross-anatomy
+omentum-female,v1.0,5931032,2,1,98824,CC BY 4.0,https://cdn.humanatlas.io/digital-objects/ref-organ/omentum-female/v1.0/assets/3d-vh-f-omentum.glb,core-gross-anatomy
+pelvis-female,v1.3,1593612,24,14,87448,CC BY 4.0,https://cdn.humanatlas.io/digital-objects/ref-organ/pelvis-female/v1.3/assets/3d-vh-f-pelvis.glb,core-landmark
+uterus-female,v1.2,980408,12,11,40950,CC BY 4.0,https://cdn.humanatlas.io/digital-objects/ref-organ/uterus-female/v1.2/assets/3d-vh-f-uterus.glb,core-gross-anatomy
+ovary-female-left,v1.3,9000,1,1,424,CC BY 4.0,https://cdn.humanatlas.io/digital-objects/ref-organ/ovary-female-left/v1.3/assets/3d-vh-f-ovary-l.glb,position-only
+ovary-female-right,v1.3,8756,1,1,410,CC BY 4.0,https://cdn.humanatlas.io/digital-objects/ref-organ/ovary-female-right/v1.3/assets/3d-vh-f-ovary-r.glb,position-only
+fallopian-tube-female-left,v1.2,336732,5,4,18281,CC BY 4.0,https://cdn.humanatlas.io/digital-objects/ref-organ/fallopian-tube-female-left/v1.2/assets/3d-vh-f-fallopian-tube-l.glb,core-gross-anatomy
+fallopian-tube-female-right,v1.2,327504,5,4,17770,CC BY 4.0,https://cdn.humanatlas.io/digital-objects/ref-organ/fallopian-tube-female-right/v1.2/assets/3d-vh-f-fallopian-tube-r.glb,core-gross-anatomy
+lymph-node-female,v1.4,4542968,8,7,254663,CC BY 4.0,https://cdn.humanatlas.io/digital-objects/ref-organ/lymph-node-female/v1.4/assets/3d-nih-f-lymph-node.glb,node-microanatomy-only
+blood-vasculature-female,v1.3,17875996,157,110,394214,CC BY 4.0,https://cdn.humanatlas.io/digital-objects/ref-organ/blood-vasculature-female/v1.3/assets/3d-vh-f-blood-vasculature.glb,core-after-crosswalk-qc
+small-intestine-female,v1.2,856536,11,9,43752,CC BY 4.0,https://cdn.humanatlas.io/digital-objects/ref-organ/small-intestine-female/v1.2/assets/3d-vh-f-small-intestine.glb,core-gross-anatomy
+large-intestine-female,v1.3,387376,11,10,20421,CC BY 4.0,https://cdn.humanatlas.io/digital-objects/ref-organ/large-intestine-female/v1.3/assets/3d-sbu-f-large-intestine.glb,core-gross-anatomy
+liver-female,v1.2,1738552,33,26,93303,CC BY 4.0,https://cdn.humanatlas.io/digital-objects/ref-organ/liver-female/v1.2/assets/3d-vh-f-liver.glb,core-detailed
+pancreas-female,v1.3,714832,6,5,12894,CC BY 4.0,https://cdn.humanatlas.io/digital-objects/ref-organ/pancreas-female/v1.3/assets/3d-vh-f-pancreas.glb,core-gross-anatomy
+spleen-female,v1.3,276824,6,5,8544,CC BY 4.0,https://cdn.humanatlas.io/digital-objects/ref-organ/spleen-female/v1.3/assets/3d-vh-f-spleen.glb,core-gross-anatomy
+urinary-bladder-female,v1.2,765224,8,6,41290,CC BY 4.0,https://cdn.humanatlas.io/digital-objects/ref-organ/urinary-bladder-female/v1.2/assets/3d-vh-f-urinary-bladder.glb,core-detailed
+kidney-female-left,v1.3,1356736,31,26,73526,CC BY 4.0,https://cdn.humanatlas.io/digital-objects/ref-organ/kidney-female-left/v1.3/assets/3d-vh-f-kidney-l.glb,core-detailed
+kidney-female-right,v1.3,1383740,29,24,75138,CC BY 4.0,https://cdn.humanatlas.io/digital-objects/ref-organ/kidney-female-right/v1.3/assets/3d-vh-f-kidney-r.glb,core-detailed
+ureter-female-left,v1.2,682688,20,16,36226,CC BY 4.0,https://cdn.humanatlas.io/digital-objects/ref-organ/ureter-female-left/v1.2/assets/3d-vh-f-ureter-l.glb,core-detailed
+ureter-female-right,v1.2,611468,19,15,32316,CC BY 4.0,https://cdn.humanatlas.io/digital-objects/ref-organ/ureter-female-right/v1.2/assets/3d-vh-f-ureter-r.glb,core-detailed

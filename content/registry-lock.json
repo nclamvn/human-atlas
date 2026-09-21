@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "algorithm": "sha256",
+  "files": {
+    "assets/anatomy-assets.json": "48eb08640d26430df294f2d8dcb13e95b76c441c40a673a905299420fe298e41",
+    "facts/blood-journey.json": "2503bd7fe14e3fd90954f16c0ff1d2bb26dc9332a1994e5cffe924c8042b4a84",
+    "facts/female-abdomen.json": "b95e43ce67cedfe166e1770fce3d0816d12c8e628f06277e742e433ce77279f2",
+    "journeys/blood-journey.json": "62d1a6d4093094157a7a76b2ee75713eb44fa13bd22a4ed5d17c76ccc547ecab",
+    "journeys/female-abdomen.json": "df3bf55036f328cf8f977692b021cf2600a78773881b2e7389e3a92f15d2aef0",
+    "narration/blood-journey.json": "47e618ba798bcf2d2af8c3f7bae8d74e6d4c7f919968796c3ff6031a904078e2",
+    "narration/female-abdomen.json": "9e7f756a1d30acd6554507aa0791b4abe0b5afc1fe400e1612c5cbf3c240bf32",
+    "sources/snapshots/female-abdomen-research-2026-09-21.txt": "a95d12d5a540631417b098c0bdc7d95fc85c4a193efc91e3270547c64ed68ae7",
+    "sources/snapshots/hra-female-v1-10.txt": "4661ee8a3d650e1e4527a03ff30f8fde800fc7115768a718ccb1b42f2fb6bdef",
+    "sources/snapshots/human-atlas-visual-conventions-v1.txt": "643c30ab79491e7cd414d9dc27c06671544ba41abf540c91532fe05ca3bb49bd",
+    "sources/snapshots/nhlbi-heart-blood-flow-2025.txt": "bf41f05a2baabcf7542be52216f2150c48511deb1c51321b0e8ca3b85dd3346e",
+    "sources/sources.json": "e496070be0f45737f416f60b96d484ad21e2ec38f2de9dd46d59bfc8d368074d",
+    "voice/product.json": "eed3ba58fd6d3b0bb3f0988cd5eea0b5319f6cf765b2442da00db5c34cfc929f"
+  }
+}

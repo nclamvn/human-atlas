@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "facts": [
+    {
+      "id": "fa-map-composite",
+      "status": "sourced",
+      "evidenceLevel": "source_geometry",
+      "sourceId": "hra-female-v1-10",
+      "evidenceSpan": "This is a composite reference atlas and is not a diagnostic model of one individual.",
+      "copy": "Mô hình là atlas tham chiếu ghép, không đại diện mọi biến thể cơ thể nữ."
+    },
+    {
+      "id": "fa-adipose-coverage",
+      "status": "corroborated",
+      "evidenceLevel": "source_geometry",
+      "sourceId": "female-abdomen-research-2026-09-21",
+      "evidenceSpan": "HRA có lớp bụng quan trọng: mỡ bụng dưới da, mạc nối, gan, tụy, đường mật, ruột non, đại tràng, lách, thận, niệu quản, bàng quang và hệ mạch bụng–chậu.",
+      "copy": "Mỡ dưới da và mạc nối là hai lớp atlas có nguồn; chúng không phải cùng một vị trí giải phẫu."
+    },
+    {
+      "id": "fa-digestion-gap",
+      "status": "sourced",
+      "evidenceLevel": "curated_knowledge",
+      "sourceId": "female-abdomen-research-2026-09-21",
+      "evidenceSpan": "Không thấy dạ dày hay thực quản như mesh trong crosswalk united-female v1.10.",
+      "copy": "Assembly HRA nữ hiện dùng chưa có mesh dạ dày và thực quản."
+    },
+    {
+      "id": "fa-ovary-detail",
+      "status": "sourced",
+      "evidenceLevel": "source_geometry",
+      "sourceId": "female-abdomen-research-2026-09-21",
+      "evidenceSpan": "Hai buồng trứng HRA chỉ phù hợp để định vị đại thể, không đủ cho cảnh close-up vi cấu trúc.",
+      "copy": "Buồng trứng dùng để định vị đại thể; mesh hiện tại không đủ cho bài vi cấu trúc."
+    },
+    {
+      "id": "fa-lymph-gap",
+      "status": "corroborated",
+      "evidenceLevel": "curated_knowledge",
+      "sourceId": "female-abdomen-research-2026-09-21",
+      "evidenceSpan": "Hệ bạch huyết có lách, tuyến ức và một mô hình hạch mạc treo; không có chuỗi hạch cạnh động mạch chủ, chậu, bẹn và mạng mạch bạch huyết toàn vùng.",
+      "copy": "Atlas chỉ cho thấy một hạch mạc treo mẫu, không phải bản đồ dẫn lưu bạch huyết bụng–chậu hoàn chỉnh."
+    },
+    {
+      "id": "fa-motion-disclosure",
+      "status": "sourced",
+      "evidenceLevel": "educational_illustration",
+      "sourceId": "female-abdomen-research-2026-09-21",
+      "evidenceSpan": "Mạng dòng chảy chỉ được dựng như lớp minh hoạ có nhãn mô phỏng giáo dục, không được trình bày như dữ liệu đo từ một cơ thể.",
+      "copy": "Nhịp sáng là chỉ dẫn kể chuyện, không mô phỏng tốc độ sinh lý hay dữ liệu đo."
+    }
+  ]
+}

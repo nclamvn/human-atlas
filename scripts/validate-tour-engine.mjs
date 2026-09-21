@@ -1,0 +1,32 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {validateContent} from './content/compile-content.mjs';
+import {INITIAL_TOUR_STATE,tourReducer} from '../app/tour/reducer.ts';
+import {readTourProgress} from '../app/tour/persistence.ts';
+import {readVoicePreference,writeVoicePreference} from '../app/voice/persistence.ts';
+import {readTourLocation,tourUrl} from '../app/tour/url-state.ts';
+import {LESSONS,ORGAN_TEXT,SYSTEM_VI} from '../app/education.ts';
+
+const repo=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const catalog=JSON.parse(fs.readFileSync(path.join(repo,'public/content/catalog.json'))),journey=JSON.parse(fs.readFileSync(path.join(repo,'public/content/journeys/female-abdomen.json'))),bloodJourney=JSON.parse(fs.readFileSync(path.join(repo,'public/content/journeys/blood-journey.json'))),productVoice=JSON.parse(fs.readFileSync(path.join(repo,'content/voice/product.json')));
+assert.equal(bloodJourney.title,'Theo “chân” giọt máu');assert.equal(bloodJourney.beats.length,8);assert.equal(new Set(bloodJourney.beats.map(beat=>beat.scene.effect)).size,8);assert.ok(bloodJourney.beats.every(beat=>beat.transcript&&beat.audio?.durationSeconds>5&&beat.audio.audioUrl.endsWith('.mp3')));assert.equal(bloodJourney.narration.provider,'ElevenLabs');assert.equal(bloodJourney.narration.modelId,'eleven_v3');assert.equal(bloodJourney.narration.languageCode,'vi');assert.equal(bloodJourney.narration.voiceName,'Viết Linh');
+assert.ok(journey.beats.every(beat=>beat.transcript&&beat.audio?.durationSeconds>5),'female abdomen narration coverage');assert.equal(journey.narration.voiceName,'Viết Linh');assert.equal(productVoice.clips.length,43);assert.equal(productVoice.modelId,'eleven_v3');assert.equal(productVoice.languageCode,'vi');assert.deepEqual(Object.fromEntries(['interface','lesson','system','organ'].map(group=>[group,productVoice.clips.filter(clip=>clip.group===group).length])),{interface:2,lesson:15,system:17,organ:9});
+const productClipIds=new Set(productVoice.clips.map(clip=>clip.id)),expectedClipIds=['intro','about',...LESSONS.flatMap(lesson=>lesson.steps.map((_,index)=>`lesson-${lesson.id}-${String(index+1).padStart(2,'0')}`)),...Object.keys(SYSTEM_VI).map(id=>`system-${id}`),...Object.keys(ORGAN_TEXT).map(id=>`organ-${id}`)];assert.deepEqual([...productClipIds].sort(),expectedClipIds.sort(),'every authored product surface has exactly one voice asset');
+let state=tourReducer(INITIAL_TOUR_STATE,{type:'CATALOG_READY',catalog});
+state=tourReducer(state,{type:'OPEN',tourId:'female-abdomen',requestId:1});assert.equal(state.status,'resolving');
+state=tourReducer(state,{type:'JOURNEY_READY',journey,requestId:1,beatIndex:2});assert.equal(state.status,'atlas-loading');assert.equal(state.beatIndex,2);
+assert.equal(tourReducer(state,{type:'JOURNEY_READY',journey,requestId:0,beatIndex:0}),state,'stale request ignored');
+state=tourReducer(state,{type:'ATLAS_READY'});assert.equal(state.status,'beat-entering');state=tourReducer(state,{type:'BEAT_READY'});assert.equal(state.status,'ready');
+assert.equal(tourReducer(state,{type:'SELECT_BEAT',index:99}),state,'invalid beat ignored');
+assert.deepEqual(readTourLocation('?tour=female-abdomen&beat=pelvis'),{tourId:'female-abdomen',beatId:'pelvis'});
+assert.equal(tourUrl({tourId:'female-abdomen',beatId:'map'},'https://example.test/?webgl'),'/\?webgl=&tour=female-abdomen&beat=map');
+const store={value:'{"version":0,"tourId":"old"}',getItem(){return this.value},removeItem(){this.value=null}};assert.equal(readTourProgress(store),null);assert.equal(store.value,null,'only stale record removed');
+const voiceStore={value:null,getItem(){return this.value},setItem(_key,value){this.value=value},removeItem(){this.value=null}};assert.equal(readVoicePreference(voiceStore),null);writeVoicePreference(false,voiceStore);assert.equal(readVoicePreference(voiceStore),false);writeVoicePreference(true,voiceStore);assert.equal(readVoicePreference(voiceStore),true);
+
+const temp=fs.mkdtempSync(path.join(os.tmpdir(),'human-atlas-fixture-'));fs.cpSync(path.join(repo,'content'),path.join(temp,'content'),{recursive:true});
+const fixture=structuredClone(JSON.parse(fs.readFileSync(path.join(temp,'content/journeys/female-abdomen.json'))));fixture.id='fixture-data-only';fixture.title='Hành trình kiểm thử';fixture.beats=fixture.beats.slice(0,1);fs.writeFileSync(path.join(temp,'content/journeys/fixture-data-only.json'),JSON.stringify(fixture));
+const compiled=validateContent({repoRoot:repo,contentRoot:path.join(temp,'content'),skipLock:true});assert.equal(compiled.runtimes.length,3);assert.ok(compiled.catalog.tours.some(item=>item.id==='fixture-data-only'));fs.rmSync(temp,{recursive:true,force:true});
+console.log('Tour engine: reducer, stale event, URL, persistence and data-only second journey passed.');

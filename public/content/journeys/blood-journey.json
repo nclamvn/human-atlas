@@ -1,0 +1,504 @@
+{
+  "schemaVersion": 1,
+  "id": "blood-journey",
+  "title": "Theo “chân” giọt máu",
+  "eyebrow": "Hành trình tuần hoàn",
+  "summary": "Một vòng qua tim, phổi và từng mô",
+  "locale": "vi-VN",
+  "atlas": "male",
+  "hero": {
+    "countLabel": "08 nhịp",
+    "accent": "#ef7b73"
+  },
+  "beats": [
+    {
+      "id": "return",
+      "number": "01",
+      "kicker": "Trở về",
+      "title": "Từ cơ thể, máu tìm đường về tim.",
+      "lead": "Sau khi trao oxy cho các mô, máu trở về qua mạng tĩnh mạch và hội tụ ở hai tĩnh mạch chủ.",
+      "body": "Tĩnh mạch chủ trên thu máu từ vùng đầu và phần trên cơ thể. Tĩnh mạch chủ dưới đưa máu từ thân dưới. Cả hai cùng mở vào nhĩ phải.",
+      "factLabel": "Điểm cần nhớ",
+      "factText": "Tên động mạch hay tĩnh mạch nói về hướng đi so với tim, không trực tiếp nói về lượng oxy.",
+      "factIds": [
+        "bj-return",
+        "bj-vena-cava",
+        "bj-color-convention"
+      ],
+      "disclosure": "ATLAS + MINH HỌA GIÁO DỤC",
+      "transcript": "Hãy bắt đầu ở những mô xa tim. Sau khi trao oxy, giọt máu theo các tĩnh mạch, nhập vào tĩnh mạch chủ và trở về nhĩ phải.",
+      "scene": {
+        "atlas": "male",
+        "systems": [
+          "venous",
+          "cardiac"
+        ],
+        "focusConcepts": [
+          "superior vena cava",
+          "inferior vena cava",
+          "right atrium"
+        ],
+        "isolate": true,
+        "lens": "solid",
+        "camera": "vena-cava-close",
+        "effect": "blood-return",
+        "accent": "#6f91df"
+      },
+      "audio": {
+        "beatId": "return",
+        "audioUrl": "/audio/blood-journey/01-return.mp3",
+        "alignmentUrl": "/audio/blood-journey/alignment/01-return.json",
+        "durationSeconds": 8.08,
+        "audioSha256": "2ff9d352851a1791758d2dd5c9ee3e06b8b55011be114ecd80e36d46987f0a1e",
+        "alignmentSha256": "6eeebdd04278227c938203d19c7b20ae5c8a6f0a1f56a540c6a7fab20483748f"
+      }
+    },
+    {
+      "id": "right-heart",
+      "number": "02",
+      "kicker": "Tim phải",
+      "title": "Hai buồng tim tạo một trạm bơm.",
+      "lead": "Máu đi từ nhĩ phải qua van ba lá xuống thất phải, rồi hướng đến cửa ra của tuần hoàn phổi.",
+      "body": "Các van hoạt động như những cánh cửa định hướng. Khi thất phải co, máu đi qua van động mạch phổi thay vì quay ngược lên nhĩ.",
+      "factLabel": "Van một chiều",
+      "factText": "Van không tự kéo máu đi; chênh lệch áp lực làm van mở và đóng.",
+      "factIds": [
+        "bj-right-heart",
+        "bj-valves",
+        "bj-visual-convention"
+      ],
+      "disclosure": "ATLAS + MINH HỌA GIÁO DỤC",
+      "transcript": "Giọt máu qua van ba lá để xuống thất phải. Một nhịp co đẩy nó qua van động mạch phổi và bắt đầu chặng đường đến phổi.",
+      "scene": {
+        "atlas": "male",
+        "systems": [
+          "cardiac"
+        ],
+        "focusConcepts": [
+          "right atrium",
+          "tricuspid valve",
+          "right ventricle",
+          "pulmonary valve"
+        ],
+        "isolate": true,
+        "lens": "solid",
+        "camera": "right-heart-close",
+        "effect": "blood-right-heart",
+        "accent": "#7698e6"
+      },
+      "audio": {
+        "beatId": "right-heart",
+        "audioUrl": "/audio/blood-journey/02-right-heart.mp3",
+        "alignmentUrl": "/audio/blood-journey/alignment/02-right-heart.json",
+        "durationSeconds": 7.28,
+        "audioSha256": "41ea1f36e53e3591c0f05fe5fe30021cb93e758dcab0e7b676e7a823f4de4e90",
+        "alignmentSha256": "49246201c53588b931f8171e70ff47f5ef5c0d91dffa8b25194f4d9705ad4b3a"
+      }
+    },
+    {
+      "id": "to-lungs",
+      "number": "03",
+      "kicker": "Đến phổi",
+      "title": "Một động mạch mang máu ít oxy.",
+      "lead": "Thân động mạch phổi chia nhánh, đưa máu từ thất phải đến cả hai lá phổi.",
+      "body": "Đây là ngoại lệ dễ nhớ: động mạch phổi vẫn là động mạch vì đưa máu rời tim, dù máu ở đây còn tương đối ít oxy.",
+      "factLabel": "Tên gọi theo hướng",
+      "factText": "Động mạch phổi được gọi theo hướng rời tim, không theo màu hay nồng độ oxy.",
+      "factIds": [
+        "bj-return",
+        "bj-right-heart",
+        "bj-color-convention"
+      ],
+      "disclosure": "ATLAS + MINH HỌA GIÁO DỤC",
+      "transcript": "Rời thất phải, giọt máu đi vào thân động mạch phổi. Con đường tách đôi, mỗi nhánh hướng về một lá phổi.",
+      "scene": {
+        "atlas": "male",
+        "systems": [
+          "cardiac",
+          "arterial",
+          "respiratory"
+        ],
+        "focusConcepts": [
+          "pulmonary trunk",
+          "pulmonary artery",
+          "left lung",
+          "right lung"
+        ],
+        "isolate": true,
+        "lens": "xray",
+        "camera": "pulmonary-wide",
+        "effect": "blood-to-lungs",
+        "accent": "#799be8"
+      },
+      "audio": {
+        "beatId": "to-lungs",
+        "audioUrl": "/audio/blood-journey/03-to-lungs.mp3",
+        "alignmentUrl": "/audio/blood-journey/alignment/03-to-lungs.json",
+        "durationSeconds": 6.08,
+        "audioSha256": "0f9659e714abea00741cd79a9490795d0717c7ed49efb5041e5c18830fe0ac6b",
+        "alignmentSha256": "af9e92a9ab2f2933d75f878e326feee85c78d702fbb862683e4dae1d64f7f432"
+      }
+    },
+    {
+      "id": "gas-exchange",
+      "number": "04",
+      "kicker": "Đổi khí",
+      "title": "Ở phổi, hành trình đổi màu.",
+      "lead": "Trong mạng mạch rất nhỏ quanh các túi khí, máu nhận oxy và thải bớt carbon dioxide.",
+      "body": "Atlas đại thể không có lưới mao mạch và phế nang đủ chi tiết. Vì vậy lớp hạt lam chuyển đỏ chỉ biểu diễn ý tưởng trao đổi khí, không phải bản đồ vi tuần hoàn thật.",
+      "factLabel": "Trung thực dữ liệu",
+      "factText": "Chuyển màu là ngôn ngữ thị giác để học, không phải màu quan sát trực tiếp hay tốc độ trao đổi khí thật.",
+      "factIds": [
+        "bj-lung-exchange",
+        "bj-visual-convention",
+        "bj-color-convention"
+      ],
+      "disclosure": "MINH HỌA GIÁO DỤC",
+      "transcript": "Tại phổi, giọt máu nhận oxy. Màu lam chuyển dần sang đỏ là ký hiệu trực quan, giúp ta nhận ra bước ngoặt của vòng tuần hoàn.",
+      "scene": {
+        "atlas": "male",
+        "systems": [
+          "respiratory",
+          "arterial",
+          "venous"
+        ],
+        "focusConcepts": [
+          "left lung",
+          "right lung",
+          "pulmonary artery",
+          "pulmonary vein"
+        ],
+        "isolate": true,
+        "lens": "xray",
+        "camera": "gas-exchange",
+        "effect": "blood-oxygenate",
+        "accent": "#c18aaa"
+      },
+      "audio": {
+        "beatId": "gas-exchange",
+        "audioUrl": "/audio/blood-journey/04-gas-exchange.mp3",
+        "alignmentUrl": "/audio/blood-journey/alignment/04-gas-exchange.json",
+        "durationSeconds": 7.76,
+        "audioSha256": "1ad90f0d6462a93f49263fa9095b40b03b25441f6702dd55c7ac3b21a733128f",
+        "alignmentSha256": "4b36f9fe23d8439d3a9916dbdb18ed8c05706007e631d66fabad9b75b934d22d"
+      }
+    },
+    {
+      "id": "left-heart",
+      "number": "05",
+      "kicker": "Tim trái",
+      "title": "Máu giàu oxy trở về buồng bơm mạnh nhất.",
+      "lead": "Tĩnh mạch phổi đưa máu về nhĩ trái. Qua van hai lá, máu đi xuống thất trái.",
+      "body": "Thành thất trái dày để tạo áp lực đưa máu đi xa. Ở chặng này, các buồng tim bên trái chuẩn bị cho tuần hoàn toàn thân.",
+      "factLabel": "Một ngoại lệ nữa",
+      "factText": "Tĩnh mạch phổi là tĩnh mạch vì đưa máu về tim, dù đang mang máu giàu oxy.",
+      "factIds": [
+        "bj-lung-exchange",
+        "bj-left-heart",
+        "bj-valves"
+      ],
+      "disclosure": "ATLAS + MINH HỌA GIÁO DỤC",
+      "transcript": "Giọt máu giàu oxy trở về nhĩ trái qua tĩnh mạch phổi, đi qua van hai lá rồi lấp đầy thất trái.",
+      "scene": {
+        "atlas": "male",
+        "systems": [
+          "venous",
+          "cardiac"
+        ],
+        "focusConcepts": [
+          "pulmonary vein",
+          "left atrium",
+          "mitral valve",
+          "left ventricle"
+        ],
+        "isolate": true,
+        "lens": "solid",
+        "camera": "left-heart-close",
+        "effect": "blood-left-heart",
+        "accent": "#ef756d"
+      },
+      "audio": {
+        "beatId": "left-heart",
+        "audioUrl": "/audio/blood-journey/05-left-heart.mp3",
+        "alignmentUrl": "/audio/blood-journey/alignment/05-left-heart.json",
+        "durationSeconds": 6.4,
+        "audioSha256": "c8b0df5d3f69dc99b85ffb58081e240173ba091b5add3b8856e2ac503a6891d4",
+        "alignmentSha256": "90d5e6ba613920b9ed86d9e1328a479c7bd3a5a15e9bbe48ee138e1dd48a7fe4"
+      }
+    },
+    {
+      "id": "aorta",
+      "number": "06",
+      "kicker": "Cú phóng",
+      "title": "Thất trái mở đường vào động mạch chủ.",
+      "lead": "Một nhịp co của thất trái đưa máu qua van động mạch chủ vào mạch lớn nhất của cơ thể.",
+      "body": "Động mạch chủ uốn thành cung rồi chia nhánh đến đầu, tay, thân và chân. Từ đây, dòng máu bước vào mạng phân phối toàn thân.",
+      "factLabel": "Trung tâm phân phối",
+      "factText": "Động mạch chủ là tuyến đầu của tuần hoàn hệ thống, nhưng không phải một ống thẳng duy nhất.",
+      "factIds": [
+        "bj-left-heart",
+        "bj-valves",
+        "bj-visual-convention"
+      ],
+      "disclosure": "ATLAS + MINH HỌA GIÁO DỤC",
+      "transcript": "Thất trái co. Giọt máu vượt qua van động mạch chủ, lao vào cung động mạch chủ và chọn một trong vô số nhánh đi khắp cơ thể.",
+      "scene": {
+        "atlas": "male",
+        "systems": [
+          "cardiac",
+          "arterial"
+        ],
+        "focusConcepts": [
+          "left ventricle",
+          "aortic valve",
+          "aorta"
+        ],
+        "isolate": true,
+        "lens": "solid",
+        "camera": "aorta-launch",
+        "effect": "blood-aorta",
+        "accent": "#f06e65"
+      },
+      "audio": {
+        "beatId": "aorta",
+        "audioUrl": "/audio/blood-journey/06-aorta.mp3",
+        "alignmentUrl": "/audio/blood-journey/alignment/06-aorta.json",
+        "durationSeconds": 8.16,
+        "audioSha256": "b14e9fbb4cc3e5021bcaa38184b6e454f328c55637c02be81c89215100d9f106",
+        "alignmentSha256": "41a563bcce858dac0aa690bbae7deea6194b7db65efdbec841a11746cae4b443"
+      }
+    },
+    {
+      "id": "to-tissues",
+      "number": "07",
+      "kicker": "Khắp cơ thể",
+      "title": "Một dòng lớn tỏa thành nhiều con đường.",
+      "lead": "Từ động mạch chủ, máu có thể đi lên não, sang thận hoặc xuống đôi chân qua những nhánh ngày càng nhỏ.",
+      "body": "Hành trình minh họa ba hướng phân phối bằng động mạch cảnh chung, động mạch thận và động mạch đùi. Mạng mao mạch cuối đường không được dựng như hình học nguồn.",
+      "factLabel": "Đọc đúng lớp hình",
+      "factText": "Các tuyến hạt cho thấy hướng kể chuyện, không đại diện lưu lượng hay mọi nhánh mạch.",
+      "factIds": [
+        "bj-left-heart",
+        "bj-visual-convention"
+      ],
+      "disclosure": "ATLAS + MINH HỌA GIÁO DỤC",
+      "transcript": "Từ động mạch chủ, giọt máu có thể lên đầu, vào thận hoặc xuống chân. Các nhánh nhỏ dần đưa oxy đến gần từng mô.",
+      "scene": {
+        "atlas": "male",
+        "systems": [
+          "arterial"
+        ],
+        "focusConcepts": [
+          "aorta",
+          "common carotid artery",
+          "renal artery",
+          "femoral artery"
+        ],
+        "isolate": true,
+        "lens": "solid",
+        "camera": "systemic-wide",
+        "effect": "blood-systemic",
+        "accent": "#ef7167"
+      },
+      "audio": {
+        "beatId": "to-tissues",
+        "audioUrl": "/audio/blood-journey/07-to-tissues.mp3",
+        "alignmentUrl": "/audio/blood-journey/alignment/07-to-tissues.json",
+        "durationSeconds": 7.04,
+        "audioSha256": "755906d6ea3b4d76e615a44d021b6b1ae58b9c6d1d13a1d39dd73b05d9435f8b",
+        "alignmentSha256": "9549e5296575d5313d602baf4d5636fc69414040401670c9d2671b3214501939"
+      }
+    },
+    {
+      "id": "cycle",
+      "number": "08",
+      "kicker": "Khép vòng",
+      "title": "Điểm kết thúc cũng là điểm bắt đầu.",
+      "lead": "Sau khi trao oxy cho mô, máu lại đi vào các tĩnh mạch và trở về tim.",
+      "body": "Hai vòng tuần hoàn — qua phổi và qua cơ thể — nối liên tục nhờ bốn buồng tim. Trong một cơ thể sống, hàng tỷ tế bào máu đang lặp hành trình ấy.",
+      "factLabel": "Nhìn toàn cảnh",
+      "factText": "Đường khép vòng trên màn hình là sơ đồ tổng hợp; mỗi tế bào máu ngoài đời có thể đi qua những nhánh khác nhau.",
+      "factIds": [
+        "bj-return",
+        "bj-left-heart",
+        "bj-visual-convention"
+      ],
+      "disclosure": "ATLAS + MINH HỌA GIÁO DỤC",
+      "transcript": "Khi oxy đã được trao cho mô, giọt máu lại trở về hệ tĩnh mạch. Hành trình khép vòng, và ngay lập tức bắt đầu một vòng mới.",
+      "scene": {
+        "atlas": "male",
+        "systems": [
+          "cardiac",
+          "arterial",
+          "venous",
+          "respiratory"
+        ],
+        "focusConcepts": [
+          "heart",
+          "aorta",
+          "superior vena cava",
+          "inferior vena cava",
+          "left lung",
+          "right lung"
+        ],
+        "isolate": true,
+        "lens": "xray",
+        "camera": "circulation-overview",
+        "effect": "blood-cycle",
+        "accent": "#d7808d"
+      },
+      "audio": {
+        "beatId": "cycle",
+        "audioUrl": "/audio/blood-journey/08-cycle.mp3",
+        "alignmentUrl": "/audio/blood-journey/alignment/08-cycle.json",
+        "durationSeconds": 7.28,
+        "audioSha256": "0f41505edf4b0dc2ccc2400287c62d650ee57f7577c1d9fdfba46463139f0e13",
+        "alignmentSha256": "01452ed3c747857d6ba2a45211f93be3691ea2019f711c3fce3ee6a046306ce5"
+      }
+    }
+  ],
+  "narration": {
+    "optional": true,
+    "speed": 1,
+    "transcript": "Mỗi chương có bản chữ thuyết minh riêng; âm thanh có thể bổ sung mà không làm gián đoạn hành trình.",
+    "provider": "ElevenLabs",
+    "modelId": "eleven_v3",
+    "languageCode": "vi",
+    "voiceName": "Viết Linh"
+  },
+  "facts": {
+    "bj-return": {
+      "id": "bj-return",
+      "status": "sourced",
+      "evidenceLevel": "curated_knowledge",
+      "sourceId": "nhlbi-heart-blood-flow-2025",
+      "copy": "Tĩnh mạch đưa máu về tim, còn động mạch đưa máu rời tim."
+    },
+    "bj-vena-cava": {
+      "id": "bj-vena-cava",
+      "status": "sourced",
+      "evidenceLevel": "curated_knowledge",
+      "sourceId": "nhlbi-heart-blood-flow-2025",
+      "copy": "Hai tĩnh mạch chủ là những cửa lớn đưa máu ít oxy vào nhĩ phải."
+    },
+    "bj-right-heart": {
+      "id": "bj-right-heart",
+      "status": "sourced",
+      "evidenceLevel": "curated_knowledge",
+      "sourceId": "nhlbi-heart-blood-flow-2025",
+      "copy": "Thất phải tạo lực đẩy đưa máu đến hai lá phổi."
+    },
+    "bj-lung-exchange": {
+      "id": "bj-lung-exchange",
+      "status": "sourced",
+      "evidenceLevel": "curated_knowledge",
+      "sourceId": "nhlbi-heart-blood-flow-2025",
+      "copy": "Sau khi nhận oxy ở phổi, máu trở về nhĩ trái qua tĩnh mạch phổi."
+    },
+    "bj-left-heart": {
+      "id": "bj-left-heart",
+      "status": "sourced",
+      "evidenceLevel": "curated_knowledge",
+      "sourceId": "nhlbi-heart-blood-flow-2025",
+      "copy": "Thất trái bơm máu giàu oxy vào động mạch chủ và hệ tuần hoàn toàn thân."
+    },
+    "bj-valves": {
+      "id": "bj-valves",
+      "status": "sourced",
+      "evidenceLevel": "curated_knowledge",
+      "sourceId": "nhlbi-heart-blood-flow-2025",
+      "copy": "Các van mở–đóng giúp dòng máu tiếp tục theo một hướng."
+    },
+    "bj-visual-convention": {
+      "id": "bj-visual-convention",
+      "status": "sourced",
+      "evidenceLevel": "educational_illustration",
+      "sourceId": "human-atlas-visual-conventions-v1",
+      "copy": "Dòng hạt chỉ dẫn đường kể chuyện; tốc độ và mật độ không biểu diễn phép đo sinh lý."
+    },
+    "bj-color-convention": {
+      "id": "bj-color-convention",
+      "status": "sourced",
+      "evidenceLevel": "educational_illustration",
+      "sourceId": "human-atlas-visual-conventions-v1",
+      "copy": "Lam–đỏ là quy ước mức oxy tương đối, không phải màu thật của máu trong cơ thể."
+    },
+    "fa-map-composite": {
+      "id": "fa-map-composite",
+      "status": "sourced",
+      "evidenceLevel": "source_geometry",
+      "sourceId": "hra-female-v1-10",
+      "copy": "Mô hình là atlas tham chiếu ghép, không đại diện mọi biến thể cơ thể nữ."
+    },
+    "fa-adipose-coverage": {
+      "id": "fa-adipose-coverage",
+      "status": "corroborated",
+      "evidenceLevel": "source_geometry",
+      "sourceId": "female-abdomen-research-2026-09-21",
+      "copy": "Mỡ dưới da và mạc nối là hai lớp atlas có nguồn; chúng không phải cùng một vị trí giải phẫu."
+    },
+    "fa-digestion-gap": {
+      "id": "fa-digestion-gap",
+      "status": "sourced",
+      "evidenceLevel": "curated_knowledge",
+      "sourceId": "female-abdomen-research-2026-09-21",
+      "copy": "Assembly HRA nữ hiện dùng chưa có mesh dạ dày và thực quản."
+    },
+    "fa-ovary-detail": {
+      "id": "fa-ovary-detail",
+      "status": "sourced",
+      "evidenceLevel": "source_geometry",
+      "sourceId": "female-abdomen-research-2026-09-21",
+      "copy": "Buồng trứng dùng để định vị đại thể; mesh hiện tại không đủ cho bài vi cấu trúc."
+    },
+    "fa-lymph-gap": {
+      "id": "fa-lymph-gap",
+      "status": "corroborated",
+      "evidenceLevel": "curated_knowledge",
+      "sourceId": "female-abdomen-research-2026-09-21",
+      "copy": "Atlas chỉ cho thấy một hạch mạc treo mẫu, không phải bản đồ dẫn lưu bạch huyết bụng–chậu hoàn chỉnh."
+    },
+    "fa-motion-disclosure": {
+      "id": "fa-motion-disclosure",
+      "status": "sourced",
+      "evidenceLevel": "educational_illustration",
+      "sourceId": "female-abdomen-research-2026-09-21",
+      "copy": "Nhịp sáng là chỉ dẫn kể chuyện, không mô phỏng tốc độ sinh lý hay dữ liệu đo."
+    }
+  },
+  "sources": {
+    "hra-female-v1-10": {
+      "id": "hra-female-v1-10",
+      "title": "Human Reference Atlas 3D Reference Object Library — united-female v1.10",
+      "url": "https://cdn.humanatlas.io/digital-objects/ref-organ/united-female/v1.10/metadata.json",
+      "license": "CC BY 4.0",
+      "capturedAt": "2026-09-21",
+      "snapshotSha256": "4661ee8a3d650e1e4527a03ff30f8fde800fc7115768a718ccb1b42f2fb6bdef"
+    },
+    "female-abdomen-research-2026-09-21": {
+      "id": "female-abdomen-research-2026-09-21",
+      "title": "Human Atlas — registry nghiên cứu vùng bụng nữ",
+      "url": "docs/research/female-abdomen-3d/README.md",
+      "license": "Project research synthesis; upstream licenses retained per source",
+      "capturedAt": "2026-09-21",
+      "snapshotSha256": "a95d12d5a540631417b098c0bdc7d95fc85c4a193efc91e3270547c64ed68ae7"
+    },
+    "nhlbi-heart-blood-flow-2025": {
+      "id": "nhlbi-heart-blood-flow-2025",
+      "title": "NHLBI — How the Heart Works: How Blood Flows through the Heart",
+      "url": "https://www.nhlbi.nih.gov/health/heart/blood-flow",
+      "license": "Public educational reference; source text paraphrased in local snapshot",
+      "capturedAt": "2026-09-21",
+      "snapshotSha256": "bf41f05a2baabcf7542be52216f2150c48511deb1c51321b0e8ca3b85dd3346e"
+    },
+    "human-atlas-visual-conventions-v1": {
+      "id": "human-atlas-visual-conventions-v1",
+      "title": "Human Atlas — quy ước minh họa sinh lý",
+      "url": "docs/vibecode/BLUEPRINT-BLOOD-JOURNEY.md",
+      "license": "Project-authored educational convention",
+      "capturedAt": "2026-09-21",
+      "snapshotSha256": "643c30ab79491e7cd414d9dc27c06671544ba41abf540c91532fe05ca3bb49bd"
+    }
+  },
+  "digest": "19c376852de7f076e5e37b7d2d03edeb7f8809df2deaa37633bbfaaa30640144"
+}
